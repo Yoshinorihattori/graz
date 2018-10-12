@@ -19,8 +19,8 @@
 \author{\IEEEauthorblockN{Yoshinori Hattori}
 \IEEEauthorblockA{\textit{Shibaura Institute of Technology, Mechanical Engineering}\\
 Tokyo, Japan \\
-\textit{Graz Institute of Technology, Institute of Fluid Mechanics and Heat Transfer}\\
-Graz, Austria \\
+%\textit{Graz Institute of Technology, Institute of Fluid Mechanics and Heat Transfer}\\
+%Graz, Austria \\
 md18060@shibaura-it.ac.jp}
 
 %\and
@@ -57,20 +57,48 @@ md18060@shibaura-it.ac.jp}
 
 \maketitle
 
-\begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
-\end{abstract}
+%\begin{abstract}
+%This document is a model and instructions for \LaTeX.
+%This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+%or Math in Paper Title or Abstract.
+%\end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+Forced convective heat transfer, Nusselt number, Wall friction, Laminar, Turblent, Cylindical pipe flow
 \end{IEEEkeywords}
 
 \section{Introduction}
 %The Introduction section has to have at least 2 paragraphs and 25 lines(about 200-250 words.)
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+%This document is a model and instructions for \LaTeX.
+%Please observe the conference page limits.
+In recent years, forced convective heat transfer in cylindical pipe flow plays an important role in many technical cooling systems.
+Considering heat transfer issues, heat transfer coefficient is one of the most important numbers.
+\begin{equation}
+h=\frac{Nu\cdot K}{L}\label{heat transfer coefficient}
+\end{equation}
+From general dimensional analysis, Nusselt number represents function of Reynolds number (Re) times Prandlt number (Pr) as following equation.
+\begin{equation}
+Nu=\alpha \cdot Re^{\pi_{\beta}}\cdot Pr^{\pi_{\gamma}}\label{Nu_dimensional}
+\end{equation}
+Here, factors $\alpha$, $\beta$ and $\gamma$ are constant value depend on flow regime and calculated from experimental result.
+%Furthermore, it's easily calculated from Nusselt number (Nu) with following equations.
+By using above \eqref{heat transfer coefficient}, we can easily find out heat transfer coefficient from \eqref{Nu_dimensional}.\\
+Many studies have pointed out that heat transfer coefficient vary depending on the type of flow: laminar, transition and turblent.
+For laminar flow...
+\begin{equation}
+Nu_{lam}=\sqrt[3]{Nu_{1}^{3}+b^{3}+(Nu_{2}-b)^{3}+Nu_{3}^{3}}\label{Nu_laminar}
+\end{equation}
+For turblent flow...
+\begin{equation}
+Nu_{turb}=\frac{\frac{\xi}{8}\cdot Re\cdot Pr}{1+12.7\cdot \frac{\xi}{8})^{0.5}\cdot (Pr^{\frac{2}{3}}-1)}\cdot(1+(\frac{d_{h}}{l})^{\frac{2}{3}})\label{Nu_turblent}
+\end{equation}
+\begin{equation}
+\xi=(1.8\log{10}Re-1.5)^{-2}
+\label{Nu_turblent_xi}
+\end{equation}
+Bertsche et al,[Bertsche2015] focused on reliable prediction of heat trasnsfer coefficient for transitional flows.
+In their study, Bertsche et al, showed experimental heat transfer coefficients for Reynolds number $500 < Re < 23000$ and Prandtl number $7 < Pr < 41$.
+
 
 \section{Ease of Use}
 
