@@ -19,8 +19,8 @@
 \author{\IEEEauthorblockN{Yoshinori Hattori}
 \IEEEauthorblockA{\textit{Shibaura Institute of Technology, Mechanical Engineering}\\
 Tokyo, Japan \\
-%\textit{Graz Institute of Technology, Institute of Fluid Mechanics and Heat Transfer}\\
-%Graz, Austria \\
+\textit{Graz Institute of Technology, Institute of Fluid Mechanics and Heat Transfer}\\
+Graz, Austria \\
 md18060@shibaura-it.ac.jp}
 
 %\and
@@ -64,14 +64,15 @@ md18060@shibaura-it.ac.jp}
 %\end{abstract}
 
 \begin{IEEEkeywords}
-Forced convective heat transfer, Nusselt number, Wall friction, Laminar, Turbulent, Cylindrical pipe flow
+Forced convection, Nusselt number, Wall friction, Laminar, Turbulent, Cylindrical pipe flow
 \end{IEEEkeywords}
 
 \section{Introduction}
 In recent years, forced convective heat transfer in cylindrical pipe flow plays an important role in many technical cooling systems.
-Considering heat transfer issues, heat transfer coefficient is one of the most important numbers.
+Nusselt number (Nu) is a dimensionless number which represents the ratio of convective (h) and conductive heat transfer (k).
+%Considering heat transfer issues, heat transfer coefficient is one of the most important numbers.
 \begin{equation}
-h=\frac{Nu\cdot K}{L}\label{heat transfer coefficient}
+Nu=\frac{h\cdot L}{k}\label{Nu_number}
 \end{equation}
 From general dimensional analysis, Nusselt number represents function of Reynolds number (Re) times Prandtl number (Pr) as following equation.
 \begin{equation}
@@ -79,7 +80,8 @@ Nu=\alpha \cdot Re^{\pi_{\beta}}\cdot Pr^{\pi_{\gamma}}\label{Nu_dimensional}
 \end{equation}
 Here, factors $\alpha$, $\beta$ and $\gamma$ are constant value depend on flow regime and calculated from experimental result.
 %Furthermore, it's easily calculated from Nusselt number (Nu) with following equations.
-By using above \eqref{heat transfer coefficient}, we can easily find out heat transfer coefficient from \eqref{Nu_dimensional}.
+%By using above \eqref{heat transfer coefficient}, we can easily find out heat transfer coefficient from \eqref{Nu_dimensional}.
+Nusselt number is one of the most important numbers for forced convective heat transfer moreover calculated from above \eqref{Nu_number}\eqref{Nu_dimensional}.
 
 Many studies have pointed out that heat transfer coefficient vary depending on the type of flow: laminar, transition and turbulent.
 Gnienlinski\cite{Gnienlinski2010} showed calculation method for laminar heat transfer coefficient of two kinds of boundary conditions. (I) Constant wall temperature (UWT) and (I\hspace{-.1em}I) Constant heat flux (UHF).
@@ -116,17 +118,18 @@ Petukhvov and Kirillov\cite{Petukhov1958} showed calculation method for turbulen
 %\xi=(1.8\log{10}Re-1.5)^{-2}
 %\label{Nu_turblent_xi}
 %\end{equation}
-There are very scare experimental data of laminar-to-turbulent transitional region.
+There are very scarce experimental data of laminar-to-turbulent transitional region.
 Bertsche et al,\cite{Bertsche2016} focused on reliable prediction of heat transfer coefficient for transitional flows.
 In their study, Bertsche et al, showed experimental heat transfer coefficients for Reynolds number $500 < Re < 23000$ and Prandtl number $7 < Pr < 41$.
 
-Most of studies focused on providing experimental data with water and air.
+Much remains to be studied for providing experimental data except water and glycole as operation fluids.
+%Most of studies focused on providing experimental data with water and air.
 In this paper, we focus on forced convective heat transfer in cylindrical pipe flow with water and glycole.
 A 50/50vol\% mixture of water and glycole which is a typical liquid coolant in automotive applications were used as a operating fluid.
 The experiment carried out considering a board range of Reynolds number, spanning from laminar to fully turbulent flow.
 In this paper we apply the techniques of Laser-induced fluorescence (LIF) to find out temperature distribution in cylindrical pipe flow.
 Moreover, the investigation shall also include the measurement of wall friction coefficient.
-%The experimental data has a good agreement to other sources as well as computational results obtained from already existing numerical simulations (CFD) by Steiner2018.
+The experimental data compared with other sources as well as computational results obtained from already existing numerical simulations (CFD) by Steiner\cite{Steiner2018}.
 
 %\cite{Baughn1995}
 
@@ -304,13 +307,13 @@ Moreover, the investigation shall also include the measurement of wall friction 
 %quantities and units. For example, write ``Temperature (K)'', not
 %``Temperature/K''.
 %
-%\section*{Acknowledgment}
-%
-%The preferred spelling of the word ``acknowledgment'' in America is without
-%an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B.
-%G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor
-%acknowledgments in the unnumbered footnote on the first page.
-%
+\section*{Acknowledgment}
+I would like to thank my thesis advisors Prof. Helfried Steiner and Prof. Guenter Brenn of the Institute of Fluid Mechanics and Heat Transfer at Graz University of Technology.
+%The door to Prof. Shirai of Mechanical Engineering department at Shibaura Institute of Technology was always support my studying abroad.
+I am also grateful to Prof. Shirai of Mechanical Engineering department at Shibaura Institute of Technology.
+I am extremely thankful and indebted to him for sharing his experiments.
+I would also like to thank Prof. Tange allowed my studying in Graz, Austria.
+
 %\section*{References}
 %
 %Please number citations consecutively within brackets \cite{b1}. The
@@ -336,7 +339,7 @@ Moreover, the investigation shall also include the measurement of wall friction 
  \bibitem{Gnienlinski2010} V. Gnienlinski, ``Heat Transfer in Laminar Flow,'' VDI Heat Atlas, second ed., Springer Verlag, 2010 (Chapter Ga 1-7), Section 3.
  \bibitem{Petukhov1958} B.S. Petukhov, V.V. kirillov, Teploenergetika 4 (1958) 91-98.
  \bibitem{Bertsche2016} Dirk Bertsche, Paul Knipper, Thomas Wetzel, ``Experimental investigation on heat transfer in laminar, transitional and turbulent circular pipe flow,'' International Journal of Heat Transfer, 95 (2016) 1008-1018.
-% \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+\bibitem{Steiner2018} Steiner, ``Title of paper if known,'' unpublished, 2018.
 % \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
 % \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 % \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
