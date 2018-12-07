@@ -1,0 +1,2 @@
+pdfjam T.pdf dT.pdf Nu.pdf alpha.pdf qw.pdf --nup 2x3 --no-landscape --outfile Page.pdf
+
