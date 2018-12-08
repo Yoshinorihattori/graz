@@ -53,7 +53,7 @@ Moreover, the investigation shall also include the measurement of wall friction 
 The engineeres is frequently interested in pressure drop which is related to determine pump or fan power equipments.
 The experimental data compared with some correlations and other sources as well as computational results obtained from already existing numerical simulations (CFD) by Rorenzo\cite{Rorenzo2019}.
 
-\section{The phenomena}
+%\section{The phenomena}
 %%Temperature variations for constantHeat flux
 %\begin{figure}[htbp]
 %  \centering
@@ -76,14 +76,14 @@ The experimental data compared with some correlations and other sources as well 
 %One is constant surface heat flux and the other is constant surface temperature.
 %In the fully developed flow of the tube, fluid constant porperties, the local heat coefficient is constant independent of x.
 
-\section{Experimental setup}
+\section{The phenomena}
 %Experimental Setup
-The experimental setup is already existing facilities by Christphan2018 figure.() .
+Figure\label{experimental_loop} shows experimental setup which is already existing facilities by Christphan2018.
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.47\textwidth,natwidth=610,natheight=642]{fig/experimental_setup.pdf}
-  \caption{Experimental setup.}
-  \label{experimental_setup}
+  \includegraphics[width=0.47\textwidth,natwidth=750,natheight=500]{fig/experimental_loop.png}
+  \caption{Experimental loop.}
+  \label{experimental_loop}
   \vspace{-2zh}
 \end{figure}
 The experimental setup loop consists of heat exchanger, pump, coriolis mass flow rate, welder, reservoir, and test section basically.
@@ -108,8 +108,8 @@ However, those thermocouples aren't directly related to calculete four parameter
 \begin{figure}[htbp]
   \centering
   %\vspace{-3zh}
-\includegraphics[width=0.47\textwidth,natwidth=610,natheight=642]{fig/thermal_boundary_layer_development.png}
-  \caption{Thermal boundary layer development}
+\includegraphics[width=0.47\textwidth,natwidth=800,natheight=300]{fig/thermal_boundary_layer_development.png}
+  \caption{Velocity and thermal boundary layer development vary with horizontal axis in a test section.}
   \label{thermal_boundary_layer_development}
 \end{figure}
 
@@ -132,45 +132,48 @@ Figure\label{density_rho} shows material properties of Shell Heat Transfer Oil S
 \end{enumerate}
 
 \begin{figure}[h]
+\vspace{3zh}
 \begin{minipage}{0.48\linewidth}
- \includegraphics[width=0.48\textwidth,natwidth=190,natheight=210]{fig/density_rho.pdf}
- \vspace{-1zh}
+ \includegraphics[width=0.48\textwidth,natwidth=200,natheight=220]{fig/density_rho.pdf}
+ \vspace{-1.5zh}
  \caption{Density rho, $\rm kg/m^{3}$}\label{density_rho}
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
  \includegraphics[width=0.48\textwidth,natwidth=190,natheight=210]{fig/dynamic_viscosity.pdf}
- \vspace{-1zh}
+ \vspace{-1.5zh}
  \caption{Dynamic viscosity mu, $\rm Pa s$}\label{dynamic_viscosity}
 \end{minipage}
 \vspace{2zh}
 \end{figure}
 
 \begin{figure}[h]
+\vspace{-1.5zh}
 \begin{minipage}{0.48\linewidth}
- \includegraphics[width=0.48\textwidth,natwidth=190,natheight=210]{fig/kinetic_viscosity.pdf}
+ \includegraphics[width=0.48\textwidth,natwidth=200,natheight=220]{fig/kinetic_viscosity.pdf}
  \vspace{-1zh}
  \caption{Kinetic viscosity nu, $\rm m^{2}/s$}\label{kinetic_viscosity}
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
  \includegraphics[width=0.48\textwidth,natwidth=190,natheight=210]{fig/heat_capacity.pdf}
- \vspace{-1zh}
+ \vspace{-1.5zh}
  \caption{Heat capacity Cp, $\rm J/kgK$}\label{heat_capacity}
 \end{minipage}
 \vspace{2zh}
 \end{figure}
 
 \begin{figure}[h]
+%\vspace{-1.5zh}
 \begin{minipage}{0.48\linewidth}
  \includegraphics[width=0.48\textwidth,natwidth=190,natheight=210]{fig/thermal_conductivity.pdf}
- \vspace{-1zh}
+ \vspace{-1.5zh}
  \caption{Thermal conductivity, $\rm W / m k$}\label{thermal_conductivity}
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
  \includegraphics[width=0.48\textwidth,natwidth=190,natheight=210]{fig/prandtl_number.pdf}
- \vspace{-1zh}
+ \vspace{-1.5zh}
  \caption{Prandtl number Pr, -}\label{prandtl_number}
 \end{minipage}
 %\vspace{-2zh}
@@ -193,11 +196,13 @@ Figure\label{density_rho} shows material properties of Shell Heat Transfer Oil S
 % \vspace{-2zh}
 %\end{figure}
 
-
+\newpage
 \section{Calucuration Flow}
 Material properties are temperature-dependent function.
-Therefore, those were fitted to the data.
-%including post processing
+At first, material properties vary with temperature are taken.
+Next, we move experimental facilities and measure temperature difference, pressure difference and mass flow rate.
+Finaly, Nusselt, Prandtl and Reynolds numbers are calcurated by post-proccesing with MATLAB. 
+Experimental data and below correlations are compared.
 
 \section{Correlations}
 Skinf friction coefficient for laminar flow is descrived following equation.
@@ -247,36 +252,71 @@ The result show good agreement with correlations.
 
 \section{Scientific problems and interests issues}
 \begin{enumerate}
+  \item Quantative way\\
+  There are 3 valves in the experimental loop.
+  The experimental condition Re and Pr are controlled by those 3 valves, pump and welder.
+  The pump and welder can controlle in a quantative way.
+  However, those 3 valves are controlled by human hand and those are no certain value.
+  In this report, that's the reason why I just say INCEASE or DECREADE, unquantative way.
+  Therefore, to controlle 3 valves in a quantative way are needed.
   \item Fluid properties\\
-  Density, heat conductivity, specific heat transfer Cp, nu, mu, Pr are all varies with temperature.
-  It is difficult to keep high Pramdlt number and transitional Reynolds number.
+  Density, heat conductivity, specific heat transfer Cp, nu, mu, Pr are all varies with temperature shown as temperature dependance in figures of fluid properties.
+  It is difficult to reach high Pramdlt number and transitional Reynolds number, which we really want.
   For example, as enhance cooling, temperature decrease, statics viscosity increase.
   As a result, Pr increase and Re decrease.
-  The ways to control Pr and Re are pointed above.
+  There are 3 ways to controlle Pr and Re shown in ''Experimental loop and Method'' section.
   Pr and Re are related each other and it it difficult to maintain the value that we want to measure.
+  This problem is related mere close to ''quantative way'' shown above.
+  Therefore, we need to find solution which is able to reach the value in an optimal way, not rule-of-thumb.
   \item Temperature calibration\\
-  There are two kinds of temperature measurement, Pt-100 and thermocouples.
-  Thermocouples are calibrated by Pt-100 because Pt-100 is accurate enough.
-  When we calibrate, the thermocouple temperature is always lower than Pt-100.
+  There are two kinds of temperature measurement, PT-100 and thermocouples.
+  Thermocouples are calibrated by PT-100 because PT-100 is more accurate than thermocouples.
+  Here, there is a interesting issue.
+  When we calibrate, thermocouples temperature of initial condition are always lower than PT-100.
   \item Fully developed length\\
-  \item 3 parameters(Nu,Re,Pr)\\
+  In figure\label{thermal_boundary_layer_development}, the length of entrance part in the test-section is 1.2 [m].
+  To check the length of fully developped flow vary with Reynolds number wheather if there is a limitation of
+flow speed to do a experiment, or not.
+  \item Three parameters (Nu, Re, Pr)\\
+  Experimental data and correlations is compared.
+  In a correlation, the Prandtl number is constant.
+  However, experimental Prandtl number is not constant because the fluid properties vary with temperature.
   The aim is to set Prandlt number level and vary the Reynolds number.
-  There are only two parameters to descrive the correlation between Nusselt number and Reynolds number.
-  The only choice is to take average Prandlt number.
-  \item As increasing pump power, increasing flow speed and decreasing Pr number vary with heat transfer rate.\\
-  Increasing pump power = Flow speed(Re) + Heat transfer rate(Pr) + Enthalpy\\
-  Calcurating enthalpy, I guess it would be easy to control pump power.
-  \item Thermal contact resistant of the capton tape which is connected with pipe and thermocouple.
+  There are only two parameters can be descrived on figures.
+  The only choice is to take average Prandlt number and plot Nusselt and Reynolds number.
+  \item The influence of enthaply, changing with pupm power\\
+  If we change pump power, not only flow speed but also heat transfer change and enthaply.
+  For example, as increasing pump power, increasing flow speed and decreasing Prandtl number vary with heat transfer rate.
+  Calcurating enthalpy, it would be easir to take Prandlt and Reynolds number which we wanted.
+  Figure\label{experimental_loop} shows 
+\begin{figure}[htbp]
+%\vspace{-5zh}
+  \centering
+  \includegraphics[width=0.47\textwidth,natwidth=750,natheight=300]{fig/pump_enthalpy.png}
+  \caption{Pump enthalpy}
+  \label{pump_enthalpy}
+  \vspace{0zh}
+\end{figure}
   
-  \item Turbulent intencity
-  \item Slliped Knudsen number
-  \item Corrilation between enthalpy and temperature profile
-  
-  \item Oil properties depend on long-distance time
-  \item Outside temperature unceirtenty
-  \item Pipe surface roughness
-  \item Low temperature cooling
-  \item Temperature genelation(round?)
+  \item Thermal contact resistant\\
+  To avoid any influence of electronic current used for heating pipe, temperature sensors are electoronicaly isolated against stainless pipe in heated test-section.
+  Calcurating any influence of thermal contact resistant between those two materials.
+  \item Property of operating liquid dependence with long period of time\\
+  It is unrealistic to change an operating liquid every experiments because it cost a lot and takes time.
+  We need to use the same test liquid for long period of time.
+  The fluid properties are taken at the bigining only one time.
+  Fluid properties are really important issue in this research.
+  Therefore, I want to search about lifuid properties dependence on time.
+  \item Low temperature cooling\\
+  In the heated part, the tube wall are heated electrically by welder.
+  It is easy to make constant heat flux condition at high temperature.
+  However, not so many ideas are available to maintain the 1[m] pipe low temperature.
+  \item Appling turbulent intencity
+  \item Appling slliped condition, Knudsen number
+%  \item Temperature genelation(round?)\\
+%  \item Corrilation between enthalpy and temperature profile
+%  \item Outside temperature unceirtenty
+%  \item Pipe surface roughness
 \end{enumerate}
 
 %Many studies have pointed out that heat transfer coefficient vary depending on the type of flow: laminar, transition and turbulent.
@@ -320,7 +360,7 @@ The result show good agreement with correlations.
 %Bertsche et al,\cite{Bertsche2016} focused on reliable prediction of heat transfer coefficient for transitional flows.
 %In their study, Bertsche et al, showed experimental heat transfer coefficients for Reynolds number $500 < Re < 23000$ and Prandtl number $7 < Pr < 41$.
 
-\section*{Acknowledgment}
+%\section*{Acknowledgment}
 %I would like to thank my thesis advisors Prof. Helfried Steiner and Prof. Guenter Brenn of the Institute of Fluid Mechanics and Heat Transfer at Graz University of Technology.
 %%The door to Prof. Shirai of Mechanical Engineering department at Shibaura Institute of Technology was always support my studying abroad.
 %I am also grateful to Dr. Shirai of Mechanical Engineering department at Shibaura Institute of Technology.
