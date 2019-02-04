@@ -5,7 +5,7 @@ win=0;
 
 %%%%%%%%% read measurement data
 %HERE = 'Messreihen/'
-HERE = './re270pr50/Daten_19.11.2018_15.42.44'
+HERE = './re290pr55/Daten_19.11.2018_15.34.50'
 
 [stmfile, stmpath] =uigetfile(strcat(HERE,'*.txt'),'Prüfstandsdatei auswählen');
 fid=fopen(fullfile(stmpath, stmfile),'rt');

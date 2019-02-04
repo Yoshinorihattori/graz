@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.6.25)  18 JAN 2019 11:28
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.6.25)  30 JAN 2019 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,34 +473,41 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <5> not available
 -- Lines per column: 56 (exact).
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 38.
+(Font)              using `JT1/mc/m/n' instead on input line 26.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 38.
+(Font)              using `JY1/mc/m/n' instead on input line 26.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+File: fig/result.png Graphic file (type eps)
+<fig/result.png>
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 (/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.
 fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.
 fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: fig/experimental_loop.png Graphic file (type eps)
- <fig/experimental_loop.png> [1
+Overfull \hbox (10.5494pt too wide) in paragraph at lines 74--74
+[] 
+ []
+
+
+Overfull \hbox (7.93564pt too wide) in paragraph at lines 95--101
+ [][][][] 
+ []
+
+[1
 
 
 ]
-File: fig/thermal_boundary_layer_development.png Graphic file (type eps)
-
-<fig/thermal_boundary_layer_development.png>
-File: fig/result.png Graphic file (type eps)
- <fig/result.png> [2]
+File: fig/uncertainty.pdf Graphic file (type eps)
+ <fig/uncertainty.pdf>
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -512,7 +519,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[2
 
 ] (./abst.aux)
 
@@ -520,12 +527,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3539 strings out of 493683
- 51474 string characters out of 6142775
- 118193 words of memory out of 5000000
- 7090 multiletter control sequences out of 15000+600000
- 36482 words of font info for 104 fonts, out of 8000000 for 9000
+ 3564 strings out of 493683
+ 51681 string characters out of 6142775
+ 120193 words of memory out of 5000000
+ 7108 multiletter control sequences out of 15000+600000
+ 40228 words of font info for 117 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,8n,35p,319b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,19n,35p,319b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abst.dvi (3 pages, 13356 bytes).
+Output written on abst.dvi (2 pages, 9464 bytes).
