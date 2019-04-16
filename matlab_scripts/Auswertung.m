@@ -14,7 +14,7 @@ date = stmfile(7:16);
 time = strcat(stmfile(18:19) , ':' , stmfile(21:22) , ':' , stmfile(24:25));
 
 indata=textscan(fid,'%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f','HeaderLines',1);
-fclose(fid);
+fclose(fid); %% close file
 
 % 1:  Tsa
 % 2:  Tsi
