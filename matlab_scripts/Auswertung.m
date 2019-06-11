@@ -5,7 +5,7 @@ win=0;
 
 %%%%%%%%% read measurement data
 %HERE = 'Messreihen/'
-HERE = './re290pr55/Daten_19.11.2018_15.34.50'
+HERE = './re230pr45/Daten_19.11.2018_16.02.21'
 
 [stmfile, stmpath] =uigetfile(strcat(HERE,'*.txt'),'Prüfstandsdatei auswählen');
 fid=fopen(fullfile(stmpath, stmfile),'rt');
@@ -205,7 +205,7 @@ Tm=Tm_aus; %%%%%%%%%%%%%%% neu
 %% iteration to update the temperatuer dependent material properties --> new wall temperature
 for i=1:2
 
-    Tw = TPT100(3);
+    Tw = TPT100(3);  
 
     T_iso = Ti(2);
     T_inf = Ti(7);
