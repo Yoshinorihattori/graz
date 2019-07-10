@@ -1,12 +1,11 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.6.25)  30 JAN 2019 22:39
+This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2019.7.8)  10 JUL 2019 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **abst.tex
 (./abst.tex
-pLaTeX2e <2016/11/29> (based on LaTeX2e <2016/03/31> patch level 3)
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+pLaTeX2e <2019-04-06> (based on LaTeX2e <2018-12-01>)
 (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -14,15 +13,12 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpdimenA=\dimen118
 \@IEEEtrantmpdimenB=\dimen119
 \@IEEEtrantmpdimenC=\dimen120
-\@IEEEtrantmpcountA=\count82
-\@IEEEtrantmpcountB=\count83
-\@IEEEtrantmpcountC=\count84
+\@IEEEtrantmpcountA=\count83
+\@IEEEtrantmpcountB=\count84
+\@IEEEtrantmpcountC=\count85
 \@IEEEtrantmptoksA=\toks15
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
-
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.
-fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -58,7 +54,6 @@ LaTeX Font Warning: Font shape `JY1/mc/bx/it' undefined
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
@@ -71,7 +66,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <7> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
@@ -84,7 +78,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <8> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
@@ -97,7 +90,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <9> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
@@ -110,7 +102,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <11> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <11> not available
@@ -123,7 +114,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <11> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
@@ -136,7 +126,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17> not available
@@ -149,7 +138,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <17> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20> not available
@@ -162,7 +150,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <20> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24> not available
@@ -175,7 +162,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <24> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 \IEEEquantizedlength=\dimen125
 \IEEEquantizedlengthdiff=\dimen126
 \IEEEquantizedtextheightdiff=\dimen127
@@ -188,85 +174,75 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen134
 \IEEEiedmathlabelsep=\dimen135
 \IEEEiedtopsep=\skip41
-\c@section=\count85
-\c@subsection=\count86
-\c@subsubsection=\count87
-\c@paragraph=\count88
-\c@IEEEsubequation=\count89
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@IEEEsubequation=\count90
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count90
-\c@table=\count91
-\@IEEEeqnnumcols=\count92
-\@IEEEeqncolcnt=\count93
-\@IEEEsubeqnnumrollback=\count94
+\c@figure=\count91
+\c@table=\count92
+\@IEEEeqnnumcols=\count93
+\@IEEEeqncolcnt=\count94
+\@IEEEsubeqnnumrollback=\count95
 \@IEEEquantizeheightA=\dimen136
 \@IEEEquantizeheightB=\dimen137
 \@IEEEquantizeheightC=\dimen138
 \@IEEEquantizeprevdepth=\dimen139
-\@IEEEquantizemultiple=\count95
-\@IEEEquantizeboxA=\box41
+\@IEEEquantizemultiple=\count96
+\@IEEEquantizeboxA=\box43
 \@IEEEtmpitemindent=\dimen140
 \IEEEPARstartletwidth=\dimen141
-\c@IEEEbiography=\count96
-\@IEEEtranrubishbin=\box42
+\c@IEEEbiography=\count97
+\@IEEEtranrubishbin=\box44
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsmath/amsmat
-h.sty
-Package: amsmath 2016/06/28 v2.15d AMS math features
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsmath/amstex
-t.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen
-.sty
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen142
-))
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy
-.sty
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen143
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn
-.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count97
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count98
-\leftroot@=\count99
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count100
-\DOTSCASE@=\count101
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box43
-\strutbox@=\box44
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
 \big@size=\dimen144
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count102
-\c@MaxMatrixCols=\count103
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
-\c@parentequation=\count104
-\dspbrk@lvl=\count105
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
 \tag@help=\toks17
-\row@=\count106
-\column@=\count107
-\maxfields@=\count108
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
 \andhelp@=\toks18
 \eqnshift@=\dimen145
 \alignsep@=\dimen146
@@ -278,69 +254,48 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsfonts/amssy
-mb.sty
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfo
-nts.sty
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/algorithms/alg
-orithmic.sty
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/base/ifthen.st
-y
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics/keyva
-l.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-\c@ALC@unique=\count109
-\c@ALC@line=\count110
-\c@ALC@rem=\count111
-\c@ALC@depth=\count112
+\c@ALC@unique=\count110
+\c@ALC@line=\count111
+\c@ALC@rem=\count112
+\c@ALC@depth=\count113
 \ALC@tlm=\skip47
 \algorithmicindent=\skip48
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics/graph
-icx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics/graph
-ics.sty
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics/trig.
-sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics-cfg/g
-raphics.cfg
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 99.
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics-def/d
-vips.def
-File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
 )
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/base/textcomp.
-sty
-Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -353,11 +308,83 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/base/ts1enc.de
-f
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
 Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
@@ -383,7 +410,6 @@ Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
 Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
 Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
 Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
-
 Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
 Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
 Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
@@ -421,13 +447,9 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.
-sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/graphics-cfg/c
-olor.cfg
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: dvips.def on input line 225.
@@ -460,8 +482,7 @@ LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 12.
@@ -473,41 +494,47 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <5> not available
 -- Lines per column: 56 (exact).
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 26.
+(Font)              using `JT1/mc/m/n' instead on input line 77.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 26.
+(Font)              using `JY1/mc/m/n' instead on input line 77.
 
-File: fig/result.png Graphic file (type eps)
-<fig/result.png>
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.
-fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 117.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
-
-(/Applications/TeXLive/Library/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.
-fd
+LaTeX Font Info:    Try loading font information for U+msb on input line 117.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (10.5494pt too wide) in paragraph at lines 74--74
-[] 
- []
-
-
-Overfull \hbox (7.93564pt too wide) in paragraph at lines 95--101
- [][][][] 
- []
-
-[1
+File: fig/experimental_loop.png Graphic file (type eps)
+ <fig/experimental_loop.png> [1
 
 
 ]
-File: fig/uncertainty.pdf Graphic file (type eps)
- <fig/uncertainty.pdf>
+File: fig/thermal_boundary_layer_development.png Graphic file (type eps)
+ <fig/thermal_boundary_layer_development.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+File: fig/velocity_profile.pdf Graphic file (type eps)
+ <fig/velocity_profile.pdf>
+File: fig/post_processing.pdf Graphic file (type eps)
+ <fig/post_processing.pdf>
+File: fig/renu_pr50.pdf Graphic file (type eps)
+ <fig/renu_pr50.pdf>
+Overfull \hbox (10.5494pt too wide) detected at line 322
+[]
+ []
+
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+ [3]
+File: fig/recf_pr50.pdf Graphic file (type eps)
+ <fig/recf_pr50.pdf>
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -519,20 +546,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
-
-] (./abst.aux)
+[4] (./abst.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3564 strings out of 493683
- 51681 string characters out of 6142775
- 120193 words of memory out of 5000000
- 7108 multiletter control sequences out of 15000+600000
+ 3658 strings out of 493223
+ 51724 string characters out of 6144416
+ 131881 words of memory out of 5000000
+ 7621 multiletter control sequences out of 15000+600000
  40228 words of font info for 117 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,19n,35p,319b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,19n,35p,349b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abst.dvi (2 pages, 9464 bytes).
+Output written on abst.dvi (4 pages, 24696 bytes).
