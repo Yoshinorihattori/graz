@@ -135,8 +135,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT fig/experimental_loop.png
 OUTPUT abst.dvi
+INPUT fig/experimental_loop.png
 INPUT fig/thermal_boundary_layer_development.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
