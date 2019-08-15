@@ -58,22 +58,31 @@ However, deterministic solution of the equations are only valid for small distur
 In physically, it is hard to get initial and boundary conditions in infinite accurate.
 Turbulent has a large amount of fluctuations, i.e. turbulent is completely different kind of laminar flows.
 Direct Numerical Simuration (DNS) is one of the simulation way to predict flow forms.
-Simuration 2 Experimental
+The object of the simuration is to solve the compelete set of equation of motion without using any model.
+From Kolmogorov lenght scale, total number of cumputations is derivered following equation (\ref{DNS_total_number_of_computation}).
+The DNS require large amount of total number of computations.
+\begin{equation}
+    \mathcal N \times \mathcal M= \mathcal O (Re^{11/4})
+    \label{DNS_total_number_of_computation}
+\end{equation}
+The equauation implies the limitation of the DNS and that is directly connected to computer technology.
+Normally, engineeres is interested in high Reynolds number such as aircraft or atmospheric boundary layer.
+However, such high Reynolds number requires huge amount of total number of computations and it's far from reality.
+
 Therefore, it is nessesary to get experimental data for correlations of heat transfer and flow condition and the Reynolds number.
 
+%attention!!!!!!!!!!!
 Many studies have pointed out that a heat transfer coefficient varies depending on the type of flow: laminar, transition and turbulent.
-Gnienlinski\cite{Gnienlinski2010} showed a calculation method for the laminar heat transfer coefficient under two kinds of boundary conditions: constant wall temperature (I) and constant heat flux (I\hspace{-.1em}I).
-Petukhvov and Kirillov\cite{Petukhov1958} showed calculation method for turbulent flows.
-Not so many data is available for experimental data of laminar-to-turbulent transitional region.
+Gnienlinski\cite{Gnienlinski2010} showed a calculation method about heat transfer coefficients for the laminar, transitional and turbulent flows.
 Bertsche et al.\cite{Bertsche2016} focused on reliable prediction of the heat transfer coefficient for transitional flows.
-In their study, they showed experimental the heat transfer coefficients for the Reynolds number, $500 < Re < 23000$, and the Prandtl number, $7 < Pr < 41$.
-
+In their study, they showed experimental the heat transfer coefficients for the Reynolds number, $500 < Re < 23000$, and the Prandtl number, $7 < Pr < 41$.\\
+However, not so many data is available for experimental data of laminar-to-turbulent transitional region.
 More studies should be conducted to obtain experimental data for high the Prandtl number and transitional flows.
 In this study, the author focused on forced convective heat transfer in flow of water and glycole in a cylindrical pipe.
 A 50/50vol\% mixture of water and glycole, which is a typical liquid coolant in automotive applications, was used as an operating fluid.
 The experiment was carried out by considering a board range of Reynolds numbers, spanning from a laminar to fully turbulent flow.
 Moreover, the measurements of the wall friction coefficients was also performed in this study.
-The experimental data were compared with other sources as well as computational results obtained from already existing numerical simulations (CFD) by Christphan \cite{Christphan2018}.
+%The experimental data were compared with other sources as well as computational results obtained from already existing numerical simulations (CFD) by Christphan \cite{Christphan2018}.
 
 
 % \section{The phenomena}
@@ -193,10 +202,10 @@ The test section consists of entrance, heated and thermal equalized parts.
 \subsection{Length-to-diameter ratio}
 %Ref. Experiments in Pipe Flows at Transitional and Very High Reynolds Numbers p25-
 The length-to-diameter ratio is an important parameter to achieve the fully developed turbulent condition in the test section.
-Test section has an inner diameter of $d_{i}=12mm$, and the length of $L=2m$ which length-to-diameter ratio is $L/d_{i}=167$.
-Patel et.al.\cite{Patel1969} showed suitable the length-to-diameter ratio for fully developed turbulent flows.
+The entrance section has an inner diameter of $d_{i}=12mm$, and the length of $L=1.2m$ which length-to-diameter ratio is $L/d_{i}=100$.
+Patel et.al.\cite{Zanoun2009} showed suitable the length-to-diameter ratio for fully developed turbulent flows.
 According to their study, they found that the minimum developing length of $L/d_{i}=70d_{i}$.
-Therefore, the length-to-diameter ratio of the test section in this experimental is long enough to ensure the fully developed turbulent flow state.
+Therefore, the length-to-diameter ratio of the entrance section in this experimental is long enough to ensure the fully developed turbulent flow state.
 
 %\subsection{Conduction equation}
 %TPT100 sensors are attached
@@ -264,7 +273,10 @@ Since all materials can be expressed by temperature-dependent functions.
 At first, the author measured the material properties of density $\rho$,  heat conductivity $k$, specific heat transfer $Cp$, kinetic viscosity $\nu$, dynamic viscosity $\mu$, Prandtl number $Pr$ that depend on temperature.
 Next, he measured temperature differences, pressure differences and mass flow rates of the test section.
 Finaly, Nusselt, Prandtl, Reynolds numbers and friction coefficients were calcurated by post-proccesing with LabView and MATLAB.
-Figure\ref{post_processing} shows ----
+Figure \ref{post_processing} shows developed improvement post-processing compared compared with 2018.
+In 2018, the author needed to take the result from Matlab file by file.
+It takes long time to deal with many data efficiently.
+Thus, he developed a new Python code which can calcurate Reynolds number, Nusselt number and friction coefficients, and plot those numbers  automatically.
 \begin{figure}[htbp]
   \centering
   \vspace{-6zh}
@@ -274,16 +286,15 @@ Figure\ref{post_processing} shows ----
   \label{post_processing}
 \end{figure}
 
-\newpage
-\newpage
 \section{Results and Discussions}
 Data obtained in previous study\cite{Christphan2018} using the same experimental facilities indicated that heat transfer and friction coefficients for Shell Heat Transfer Oil.
-Bertsche et al.\cite{Bertsche2016} showed heat transfer coefficiets for $500 < Re < 23000$ and $7 < Pr < 41$ with $80.8\%$ data for water-glycole mixture with a mass friction of water of $x_{m} = 0.477$.
-According to their study, experimental data were within $\pm15\%$ to the emperical equations (\ref{Nu_laminar})(\ref{Nu_turbulent})(\ref{Nu_transitional}).
+%Bertsche et al.\cite{Bertsche2016} showed heat transfer coefficiets for $500 < Re < 23000$ and $7 < Pr < 41$ with $80.8\%$ data for water-glycole mixture with a mass friction of water of $x_{m} = 0.477$.
+%According to their study, experimental data were within $\pm15\%$ to the emperical equations (\ref{Nu_laminar})(\ref{Nu_turbulent})(\ref{Nu_transitional}).
 The aim of this research is to investigate heat transfer and friction coefficients using  water-glycole $50\%/50\%$ mixture as an oparatiog liquid.
 In order to investigate Prandtl number throughly, first the experimental results for Pr=50 is compared with data obtained in previous studies \cite{Christphan2018} using Shell Heat Transfer Oil for Prandtl numbers Pr=50.
 Therefore, the validity of evaluation process for the experiment are checked.\\
 
+\newpage
 %\subsection{Heat transfer coefficients for $Pr=50$}
 Figure. \ref{renu_pr50} shows dimensionless heat transfer coefficients for $Pr=50$ compared to emperical correlations equations (\ref{Nu_laminar})(\ref{Nu_turbulent})(\ref{Nu_transitional}) and previous studies.
 \begin{figure}[htbp]
@@ -345,11 +356,9 @@ The mesurement uncertainty in friction coefficients leads to Equation (\ref{cf_u
     \frac{\Delta C_{f}}{C_{f}} = \sqrt{\left(\frac{\Delta P}{P}\right)^{2}+\left(\frac{\Delta \rho}{\rho}\right)^{2}+2\left(\frac{\Delta \dot{m}}{\dot{m}}\right)^{2}}
     \label{cf_uncertainty}
 \end{equation}
-Based on this approach, the average uncertainty of the mesurement for this study shows --
-Nevertheless, these results suggest that
-
-
-\subsection{Purpose of the solution to deduce mesurement uncertainty for Nu}
+Based on this approach, the average uncertainty of the mesurement for this study were shown in previous.
+%Nevertheless, these results suggest that
+%subsection{Purpose of the solution to deduce mesurement uncertainty for Nu}
 Table (\ref{order}) shows the orders of each terms in Equation \ref{Nu_uncertainty2}.
 From this comprehensive result, temperature term is several orders of magnitude larger than others.
 Therefore, temperature mesurement is strongly inflected to mesurement uncertainty.
@@ -362,10 +371,11 @@ According to this analisis, careful selections of temperature sensors are needed
  \begin{tabular}{ccccc}
 \hline
       & Mass flow & Specific heat capacity & lambda & Temperature \\ \hline
-Order & O (-8)    & O (-8)                 & O(-8)  & O(-4)
+Order & O (-8) & O(-8)  & O(-8) & O(-4)
  \end{tabular}
 \end{table}
 
+\newpage
 \section{Future plan}
 An operating fluid was changed from Shell Heat Transfer to Water-glycol.
 And new accurate thermocouples were repalaced.
@@ -380,7 +390,7 @@ The author describes future plans below.
   \item Documentation
 \end{enumerate}
 
-\newpage
+
 \section{Appendix}
 The experiment was carried out already existing fasilities by Christphan2018 \cite{Christphan2018}.
 Experimental procedure is as follows.
@@ -411,11 +421,10 @@ Experimental procedure is as follows.
   \item Adjest suitable experimental parameters for Re and Pr.
   \begin{enumerate}
       \item Decrease Re and increase Pr\\
-      %Open valve A and close valve B little by little.
-      %Enhance cooling, statics viscosity increase.
-      %Thus, Pr increase.
-      \item Decrease Re and decrease Pr\\
-      \item Decrease Re and keeps Pr constant\\
+      Open valve A and close valve B little by little.
+      As enhance cooling, statics viscosity increase.
+      \item Decrease Re and decrease Pr
+      \item Decrease Re and keeps Pr constant
 
   \end{enumerate}
   \item Wait until the condition reaches steady
@@ -432,15 +441,16 @@ Experimental procedure is as follows.
 
 \begin{thebibliography}{00}
 %\bibitem{Frank} Frank P. Incropera, David P. DeWitt, ``Fundamentals of Heat and Mass Transfer,'' 4th edition., WILEY, 1996.
-\bibitem{Patel1969}Patel and Head
-\bibitem{Konakov1954}Konakov
+%\bibitem{Patel1969}Patel and Head, ``Some observations on skin friction and velocity profiles in fully developed pipe and channel flows.''
+\bibitem{Zanoun2009}Zanoun, E.-S., M. Kito and Ch. Egbers, ``A study on Flow Transition and Development in Circular and Rectangular Ducts.'' Journal of Fluids Engineering, 131(6)-061204.
+\bibitem{Konakov1954}Konakov, P. K., ``Eine neue Formel fr den Reibungskoeffizienten glatter Rohre'', 1954, Bericht der Akademie der Wissenschaften der UDSSR 51.7, 503–506.
 \bibitem{Gnienlinski2010} V. Gnienlinski, ``Heat Transfer in Laminar Flow,'' VDI Heat Atlas, second ed., Springer Verlag, 2010 (Chapter Ga 1-7), Section 3.
 %\bibitem{Petukhov1958} B.S. Petukhov, V.V. kirillov, Teploenergetika 4 (1958) 91-98.
 \bibitem{Bertsche2016} Dirk Bertsche, Paul Knipper, Thomas Wetzel, ``Experimental investigation on heat transfer in laminar, transitional and turbulent circular pipe flow,'' International Journal of Heat Transfer, 95 (2016) 1008-1018.
 \bibitem{Christphan2018} Christphan, ``Title of paper if known,'' unpublished, 2018.
 \bibitem{Emir2018}Emir Öngüner, 'Experiments in Pipe Flows at Transitional and Very High Reynolds Numbers', Cuvillier Verlag, 2018.
-\bibitem{Petukhov1958}Petukhov
-
+\bibitem{Frans2016}Frans T.M. Nieuwstadt, Bendiks J. Boersma and Jerry Westerweel, ``Turbulence: Introduction to Theory and Applications of Turbulent Flows'', (Springer, 2016)3-4, 71-74, 101-102, 176-181.
+\bibitem{Frank}Frank P.Incropera et al., ``Fundamentals of Heat and Mass Transfer'', (Wiley, 2006)
 
 %bibitem{Konakov1954} Konakov, ``Eine neue Formel fr den Reibungskoezienten glatter Rohre,'' Bericht der Akademie der Wissenschaften der UDSSR 51.7, 503-506.
 
