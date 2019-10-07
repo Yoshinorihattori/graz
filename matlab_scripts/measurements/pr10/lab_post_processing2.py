@@ -542,8 +542,8 @@ leg = ax1.legend(loc='upper right',prop={'size': 20})
 leg_lines = leg.get_lines()
 leg_texts = leg.get_texts()
 # bulk-set the properties of all lines and texts
-plt.setp(leg_lines, linewidth=linesize_legend-5)
-plt.setp(leg_texts, fontsize=fontsize_legend-5)
+plt.setp(leg_lines, linewidth=linesize_legend)
+#plt.setp(leg_texts, fontsize=fontsize_legend-5)
 
 
 
@@ -641,10 +641,10 @@ plt.tight_layout()
 plt.savefig(OutPutFig)
 
 
-#plt.subplots_adjust(right=0.94)
-#plt.subplots_adjust(bottom=0.14)
-#plt.subplots_adjust(top=0.92)
-#plt.subplots_adjust(wspace=0.0, hspace=0, right=.95)
+plt.subplots_adjust(right=0.94)
+plt.subplots_adjust(bottom=0.14)
+plt.subplots_adjust(top=0.92)
+plt.subplots_adjust(wspace=0.0, hspace=0, right=.95)
 
 
 

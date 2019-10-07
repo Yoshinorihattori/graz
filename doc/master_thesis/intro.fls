@@ -1,0 +1,14 @@
+PWD /Users/yoshi/Desktop/GitHub/graz/doc/master_thesis
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/eptex/platex.fmt
+INPUT intro.tex
+OUTPUT intro.log
+INPUT /usr/local/texlive/2019/texmf-dist/tex/platex/base/jbook.cls
+INPUT /usr/local/texlive/2019/texmf-dist/tex/platex/base/jbook.cls
+INPUT /usr/local/texlive/2019/texmf-dist/tex/platex/base/jbk12.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/platex/base/jbk12.clo
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm

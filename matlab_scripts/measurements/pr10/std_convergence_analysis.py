@@ -121,7 +121,7 @@ Ugeo_MS = di*np.pi #円菅内面積
 Ageo_quer = di**2*np.pi/4
 
 #PT100 position
-#x_pos_TPt100_old = 
+#x_pos_TPt100_old =
 x_pos_TPt100_new =      [0.030, 2.400, 2.600, 2.800, 3.000, 3.000, 3.140, 5.500]
 x_pos_TPt100_new_tmp =  [2.400, 2.600, 2.800, 3.000, 3.140]
 TPT100_new_tmp =        [0,0,0,0,0]
@@ -165,7 +165,7 @@ Nu_turb_Gni4Tau_list = []
 # In[9]:
 
 
-where = './data_re14000_pr10_new/'
+where = './pr10_re14000/re14000_pr10a+b/'
 
 n_samples  = 0
 for f_name in sorted(os.listdir(where)):
@@ -236,7 +236,7 @@ for fname in sorted(os.listdir(where)):
         Zzeta100 = data[0,35] #zeta
         Zqm100 = data[0,36] #zeta qw
         TPT100_T5 = data[0,37] #PT100 T5
-        
+
         TPT100_out = TPT100_a_new
         TPT100_in  = TPT100_i_new
         TPT100_mean= TPT100_m_new
@@ -265,7 +265,7 @@ for fname in sorted(os.listdir(where)):
             mu_m     = nu_m * rho_m
             cp_m     = cp(Tm)
             Lambda_m = Lambda(Tm)
-            
+
             dqhldT = 1
             zeta_mischer = 32.46
             Thl = (Tw + Tm)*0.5
@@ -273,7 +273,7 @@ for fname in sorted(os.listdir(where)):
             qhlm2 = qhl / (da*np.pi*5.45)
             Re_m = Re_C1
             Lambda_Pet = (1.8*np.log10(Re_m)-1.5)**(-2)
-            
+
             #Specific heat capasity, cp mean
             T_in = TPT100_new[0] + 273.15
             T_out = TPT100_new[7] + 273.15
@@ -282,26 +282,26 @@ for fname in sorted(os.listdir(where)):
             cpm = (Ac*(T_out-T_in)+Bc/2*(T_out**2-T_in**2))/(T_out-T_in)*1000 #Eq(2.108)
             Wmean = Re_m*nu_m/di #velocisty
             mdot = m_dot_C1/3600
-            
+
             #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             #x_pos_TPt100_new_tmp[0] = x_pos_TPt100_new[1]
             #x_pos_TPt100_new_tmp[1] = x_pos_TPt100_new[2]
             #x_pos_TPt100_new_tmp[2] = x_pos_TPt100_new[3]
             #x_pos_TPt100_new_tmp[3] = 0.5 * (x_pos_TPt100_new[4] + x_pos_TPt100_new[5])
             #x_pos_TPt100_new_tmp[4] = x_pos_TPt100_new[6]
-            
+
             TPT100_new_tmp[0] = TPT100_new[1]
             TPT100_new_tmp[1] = TPT100_new[2]
             TPT100_new_tmp[2] = TPT100_new[3]
             TPT100_new_tmp[3] = 0.5 * (TPT100_new[4] + TPT100_new[5])
             TPT100_new_tmp[4] = TPT100_new[6]
-            
+
             fit = np.polyfit(x_pos_TPt100_new_tmp, TPT100_new_tmp,1)
             gradT_PT100 = fit[0]
             Q_Pt100 = gradT_PT100*mdot*cpm*L
             qUI = P_MS/Ageo_MS
             dqw2 = (Lambda_Pet*(5.45-2.92)/di + zeta_mischer) * rho_m * Wmean**2 /2 * Wmean * Ageo_quer - qhl*(5.45-2.53)/5.45
-            
+
             Qin_out = mdot*cpm*(T_out-T_in)
             dQ = Qin_out-P_MS
             gradT = (Qin_out/L) / (mdot * cpm )
@@ -309,7 +309,7 @@ for fname in sorted(os.listdir(where)):
             SA_Tm = gradT*(x_MS_out-x_pos_TPt100_new[6])
             Tm_aus = TPT100_new[7] - dTm
             Tm = Tm_aus - SA_Tm
-            
+
             qw = Qin_out/ Ageo_MS
             if(Qin_out>0):
                 qvA=qhlm2
@@ -317,7 +317,7 @@ for fname in sorted(os.listdir(where)):
             else:
                 qvA=0
                 #print('qvA=0')
-            
+
             Pr_w     = Pr(Tw)
             rho_w    = rho(Tw)
             nu_w     = nu(Tw)
@@ -330,14 +330,14 @@ for fname in sorted(os.listdir(where)):
             mu_m     = nu_m * rho_m
             cp_m     = cp(Tm)
             Lambda_m = Lambda(Tm)
-            
+
             #P_spez_m2 = P_MS/A;
             P=Pm
             P=P_MS
             #Reynolds number[-]
             Re_m = m_dot_C1/3600*4./(nu_m*rho_m*di*np.pi)
             Re_w = m_dot_C1/3600*4./(nu_w*rho_m*di*np.pi)
-            
+
             #Wall temperature calibration
             qVol = Qin_out / V
             Tw = T1(ri,qvA,qVol,TPT100_a_new[6], TPT100_a_new[6])
@@ -356,11 +356,11 @@ for fname in sorted(os.listdir(where)):
             TPT100_new[4] = Tw_SA5
             TPT100_new[5] = Tw_SA6
             TPT100_new[7] = Tw_SA8
-            
+
             Nu_QmdotCpDt_w = qw * di / (Lambda_w * (Tw-Tm ))
             NuMessung = Nu_QmdotCpDt_w
             tau_w = dp*di/(1*4)
-            
+
             ###ADDDDDDDDDDD!!!!!!!!!
             Pr_w     = Pr(Tw)
             rho_w    = rho(Tw)
@@ -374,13 +374,13 @@ for fname in sorted(os.listdir(where)):
             mu_m     = nu_m * rho_m
             cp_m     = cp(Tm)
             Lambda_m = Lambda(Tm)
-            
+
             w_tau=(tau_w/rho_m)**(1./2.) #share velocity
             ReTau = w_tau*di/nu_w
             ###ADDDDDDDDDDD!!!!!!!!!
             Wmean = Re_m*nu_m/di
             cf_M = tau_w/(rho_m*Wmean**2/2.) #Friction coefficient Eq(4.8)
-        
+
 #        print(filename)
         #桁数は四捨五入ではなく、「丸め」であることに注意
         #print('Tin','{:.4f}'.format(T_in), 'Tout','{:.4f}'.format(T_out),'Tw', '{:.4f}'.format(Tw), 'Tm', '{:.4f}'.format(Tm))
@@ -390,7 +390,7 @@ for fname in sorted(os.listdir(where)):
         #print('Pr[-]','{:.2f}'.format(Pr_m),'{:.2f}'.format(Pr_w))
         #print('Nu','{:.4f}'.format(NuMessung))
 #        print('cf_M','{:.10f}'.format(cf_M))
-        
+
         # Measurement uncertainty
         #### absolute error
         T_e = 0.04#New PT100??????????????
@@ -404,7 +404,7 @@ for fname in sorted(os.listdir(where)):
         cp_e = 4.5 * T_e
         #thermal conductivity of fluid [W / m K]
         Lambda_e = 6.071e-4 * T_e
-        
+
         #Uncertainty in each measurement influencing
         delta_mdot = (mdot_e / mdot)**2
         delta_cp = (cp_e/cp_m)**2 #cpm、cp_mどちら？
@@ -413,21 +413,21 @@ for fname in sorted(os.listdir(where)):
         #Measurement uncertainty for NuMessung
         delta_NuMessung = (delta_mdot + delta_cp + delta_Lambda + delta_T)**(1./2.) * NuMessung
         #Reduction of the uncertainty of the cp calibration is the most effective, in order to reduce the uncertainty of Nu.
-        
+
         #Uncertainty in each measurement influencing
         delta_p = (p_e / dp)**2
         delta_rho = (rho_e / rho_m)**2
         #Measurement uncertainty for cf_M
         delta_cf_M = (delta_p + delta_rho + (2.*delta_mdot))**(1./2.) * cf_M
         #Reduction of the uncertainty of the p calibration is the most effective, in order to reduce the uncertainty of cf.
-        
+
         xi_Pet4Tau = (1.8 * np.log10(Re_m) - 1.5)**(-2)#Petukhov
         Nu_turb_Gni4Tau = ((xi_Pet4Tau/8. * Re_m * Pr_m) / (1. + 12.7 * (xi_Pet4Tau/8)**0.5 * (Pr_m**(2/3) - 1))) *(Pr_m/Pr_w)**0.11
         Nu_turb_Gni4Tau_list.append(Nu_turb_Gni4Tau)
 
-        
+
         #Nu_turb_Gni4Tau_list.append(Nu_turb_Gni4Tau)
-        
+
         filename_list.append(filename)
         T_in_list.append(T_in)
         T_out_list.append(T_out)
@@ -443,15 +443,15 @@ for fname in sorted(os.listdir(where)):
         NuMessung_list.append(NuMessung)
         cf_M_list.append(cf_M)
         delta_NuMessung_list.append(delta_NuMessung)
-        delta_cf_M_list.append(delta_cf_M) 
-        
+        delta_cf_M_list.append(delta_cf_M)
+
         mu_m_list.append(mu_m)
         mu_w_list.append(mu_w)
-        
-        
+
+
         I_MS_list.append(I_MS)
         #--------------------------------------------
-        
+
         epoch = os.path.getmtime(filename)
         filename_day = time.strftime('%d%m%Y', time.localtime(epoch))
         filename_time = time.strftime('%H%M%S', time.localtime(epoch))
@@ -463,44 +463,44 @@ for fname in sorted(os.listdir(where)):
         variance = calculate_variance(NuMessung_list)
         mean     = calculate_mean    (NuMessung_list)
         std_Nu [n_samples-1] = variance**0.5
-        mean_Nu[n_samples-1] = mean 
-#        print(Re_m_list, std[n_samples-1])
+        mean_Nu[n_samples-1] = mean
+        #print(Re_m_list, std[n_samples-1])
 
         variance = calculate_variance(cf_M_list)
         mean     = calculate_mean    (cf_M_list)
         std_cf[n_samples-1] = variance**0.5
-        mean_cf[n_samples-1] = mean 
+        mean_cf[n_samples-1] = mean
 
         variance = calculate_variance(Re_m_list)
         mean     = calculate_mean    (Re_m_list)
         std_Re[n_samples-1] = variance**0.5
-        mean_Re[n_samples-1] = mean 
+        mean_Re[n_samples-1] = mean
 
 
 
 
 #        print(np.size(Re_m_list),n_samples)
-        nsamples[n_samples-1] = n_samples    
+        nsamples[n_samples-1] = n_samples
 
-        
+
 # In[45]:
 
 fig = plt.figure(1)
-ax1 = plt.subplot(131) 
+ax1 = plt.subplot(131)
 plt.plot(nsamples, std_Re, color='blue',linestyle="dotted", label=r'$std^{Re}$')
 plt.grid(True)
 plt.legend()
 plt.xlabel(r'# samples')
 
 
-ax1 = plt.subplot(132) 
+ax1 = plt.subplot(132)
 plt.plot(nsamples, std_cf, color='blue',linestyle="dotted", label=r'$std^{cf}$')
 plt.grid(True)
 plt.legend()
 plt.xlabel(r'# samples')
 
 
-ax1 = plt.subplot(133) 
+ax1 = plt.subplot(133)
 plt.plot(nsamples, std_Nu, color='blue',linestyle="dotted", label=r'$std^{Nu}$')
 plt.grid(True)
 plt.legend()
@@ -514,21 +514,21 @@ plt.xlabel(r'# samples')
 
 
 fig = plt.figure(3)
-ax1 = plt.subplot(131) 
+ax1 = plt.subplot(131)
 plt.plot(nsamples, mean_Re, color='blue',linestyle="dotted", label=r'$\bar{Re}$')
 plt.grid(True)
 plt.legend()
 plt.xlabel(r'# samples')
 
 
-ax1 = plt.subplot(132) 
+ax1 = plt.subplot(132)
 plt.plot(nsamples, mean_cf, color='blue',linestyle="dotted", label=r'$\bar{cf}$')
 plt.grid(True)
 plt.legend()
 plt.xlabel(r'# samples')
 
 
-ax1 = plt.subplot(133) 
+ax1 = plt.subplot(133)
 plt.plot(nsamples, mean_Nu, color='blue',linestyle="dotted", label=r'$\bar{Nu}$')
 plt.grid(True)
 plt.legend()
@@ -556,6 +556,3 @@ plt.show()
 
 
 # In[19]:
-
-
-

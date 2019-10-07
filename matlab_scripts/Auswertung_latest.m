@@ -4,7 +4,7 @@ win=0;
 show1=0;
 show=1;
 
-HERE = './measurements/pr10/Daten_14.08.2019_10.33.26'
+HERE = './measurements/Daten_19.09.2019_15.00.14'
 %HERE = '/home/chi/Dropbox/PHD/Pruefstand/pipe_test_bench/Labview/Rohrpruefstand/Messdaten/Messreihen/'
 %HERE = '';
 [stmfile, stmpath] =uigetfile(strcat(HERE,'*.txt'),'Prüfstandsdatei auswählen');
