@@ -1,0 +1,17 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{$c$}]\begingroup Speed of light in a vacuum inertial system\nomunit{$299,792,458\, m/s$}\nomeqref {0}\nompageref{2}
+  \item [{$h$}]\begingroup Plank Constant\nomunit{$6.62607 \times 10^{-34}\, Js$}\nomeqref {0}\nompageref{2}
+\nomgroup{B}
+  \item [{$T$}]\begingroup Temperature\nomunit{$K$}\nomeqref {0}\nompageref{2}
+  \item [{$C_{p}$}]\begingroup Specific heat capasity\nomunit{$J \cdot kg^{-1} K^{-1}$}\nomeqref {0}\nompageref{2}
+  \item [{$\lambda$}]\begingroup Thermal conductivity\nomunit{$W m^{-1} K^{-1}$}\nomeqref {0}\nompageref{2}
+  \item [{$\mu$}]\begingroup Dynamic viscosity\nomunit{$Pa \cdot s$}\nomeqref {0}\nompageref{2}
+  \item [{$\rho$}]\begingroup Density\nomunit{$kg/m^{3}$}\nomeqref {0}\nompageref{2}
+  \item [{$Pr$}]\begingroup Prandtl number\nomunit{-}\nomeqref {0}\nompageref{2}
+\nomgroup{C}
+  \item [{$\rho$}]\begingroup Friction Index\nomeqref {0}\nompageref{2}
+  \item [{$V$}]\begingroup Constant Volume\nomeqref {0}\nompageref{2}
+
+\end{thenomenclature}

@@ -1,0 +1,31 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{Bertsche2016}
+Dirk Bertsche, Paul Knipper, and Thomas Wetzel, \emph{{Experimental
+  investigation on heat transfer in laminar, transitional and turbulent
+  circular pipe flow}}, International Journal of Heat and Mass Transfer
+  \textbf{95} (2016), 1008--1018.
+
+\bibitem{Gnielinski2013}
+V.~Gnielinski, \emph{{On heat transfer in tubes}}, International Journal of
+  Heat and Mass Transfer \textbf{63} (2013), 134--140.
+
+\bibitem{Gnielinski1975}
+Volker Gnielinski, \emph{{Neue Gleichungen f{\"{u}}r den W{\"{a}}rme- und den
+  Stoff{\"{u}}bergang in turbulent durchstr{\"{o}}mten Rohren und
+  Kan{\"{a}}len}}, Forschung im Ingenieurwesen \textbf{41} (1975), no.~1,
+  8--16.
+
+\bibitem{Petukhov1970}
+B.~S. Petukhov, \emph{{Heat Transfer and Friction in Turbulent Pipe Flow with
+  Variable Physical Properties}}, Advances in Heat Transfer \textbf{6} (1970),
+  no.~C, 503--564.
+
+\end{thebibliography}

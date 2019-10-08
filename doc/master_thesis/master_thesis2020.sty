@@ -1,0 +1,151 @@
+% master_thesis2012.sty
+%  for master thesis in SIT
+
+% useful packages
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{okumacro}
+%\usepackage[textwidth=2.7in]{geometry}
+
+%% set size of paper parameter
+\setlength{\topmargin}{20truemm}
+\addtolength{\topmargin}{-1truein}
+\addtolength{\topmargin}{-\headheight}
+\addtolength{\topmargin}{-\headsep}
+\setlength{\textheight}{242truemm}
+
+\setlength{\oddsidemargin}{30mm}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{30mm}
+\addtolength{\evensidemargin}{-1in}
+\setlength{\textwidth}{170mm}
+\fancyheadoffset{\textwidth}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\bibname}{References}
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\floatpagefraction}{0.7}
+
+\fancyhead{}
+\lhead[\leftmark]{}
+\chead{}
+\rhead[]{\rightmark}
+\lfoot[\thepage]{\theauthor 2020}
+\cfoot{}
+\rfoot[\theauthor 2020]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
+
+\renewcommand{\chaptermark}[1]{\markboth{chapter\ \thechapter\ section~#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}}
+
+\makeatletter
+\renewcommand{\chapter}{%
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \thispagestyle{jpl@in}%
+  \global\@topnum\z@
+  \@afterindenttrue
+  \secdef\@chapter\@schapter}
+\def\@chapter[#1]#2{%
+  \ifnum \c@secnumdepth >\m@ne
+    \if@mainmatter
+    \refstepcounter{chapter}%
+    \typeout{\@chapapp\space\thechapter\space\@chappos}%
+    \addcontentsline{toc}{chapter}%
+      {\protect\numberline{\@chapapp\thechapter\@chappos}#1}%
+    \else\addcontentsline{toc}{chapter}{#1}\fi
+  \else
+    \addcontentsline{toc}{chapter}{#1}%
+  \fi
+  \chaptermark{#1}%
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+  \@makechapterhead{#2}\@afterheading}
+\def\@makechapterhead#1{\hbox{}%
+  \vskip10\Cvs
+  {\parindent\z@
+   \raggedright
+   \reset@font\huge\bfseries
+   \leavevmode
+   \ifnum \c@secnumdepth >\m@ne
+     \setlength\@tempdima{\linewidth}%
+    \if@mainmatter
+     \setbox\z@\hbox{\@chapapp\thechapter\@chappos\hskip1zw}%
+     \addtolength\@tempdima{-\wd\z@}%
+     \unhbox\z@\nobreak
+    \fi
+     \vtop{\hsize\@tempdima#1}%
+   \else
+     #1\relax
+   \fi}\nobreak\vskip3\Cvs\clearpage}
+\def\@schapter#1{%
+  \@makeschapterhead{#1}\@afterheading
+}
+\def\@makeschapterhead#1{\hbox{}%
+  \vskip2\Cvs
+  {\parindent\z@
+   \raggedright
+   \reset@font\huge\bfseries
+   \leavevmode
+   \setlength\@tempdima{\linewidth}%
+   \vtop{\hsize\@tempdima#1}}\vskip3\Cvs}
+\makeatother
+
+%%% 参考文献を目次に出す
+\makeatletter%% プリアンブルで定義する場合は必須
+
+%% (j)report・(j)book クラスの場合
+%%
+\renewenvironment{thebibliography}[1]% 再定義
+{\chapter*{\bibname\@mkboth{\bibname}{\bibname}}%
+ \addcontentsline{toc}{chapter}{\bibname}% この行追加
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+  {\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+
+\makeatother%% プリアンブルで定義する場合は必須
+
+
+\newcommand{\thesistitle}[6]{%
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{12zh}
+    		{\Large 2020年度\quad 芝浦工業大学大学院}\\[5zh]
+	    	{\Huge 修\qquad 士\qquad 論\qquad 文}\\[7zh]
+		    {\Large 題目：{\bfseries #1}}\\[10zh] % title
+			{\large
+    		\begin{tabular}{p{7zw}l}
+	     		専攻 & 理工学研究科（修士課程）\\
+	     		 & 機械工学専攻\\[1zh]
+				学籍番号 & #2\\[1zh]
+				氏名 & \ruby{#3}{#5}\ \ruby{#4}{#6}\\[1zh]
+				指導教員 & 丹下 学\\[1zh]
+				%担当教員 & 丹下 学
+			\end{tabular}
+			}
+		\end{center}
+	\end{titlepage}
+	\def\theauthor{#3#4}
+}
+
+\kanjiskip=.1zw plus 3pt minus 3pt
+\xkanjiskip=.1zw plus 3pt minus 3pt

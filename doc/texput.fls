@@ -1,0 +1,7 @@
+PWD /Users/yoshi/Desktop/GitHub/graz/doc
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/eptex/platex.fmt
+OUTPUT texput.log

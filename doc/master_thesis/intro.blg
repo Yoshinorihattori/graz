@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: intro.aux
+The style file: amsplain.bst
+Database file #1: /Users/Shared/TeXLive/texmf/bibtex/bib/local/graz.bib
+You've used 4 entries,
+            2213 wiz_defined-function locations,
+            532 strings with 4668 characters,
+and the built_in function-call counts, 1246 in all, are:
+= -- 118
+> -- 39
+< -- 0
++ -- 16
+- -- 12
+* -- 114
+:= -- 202
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 18
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 44
+empty$ -- 112
+format.name$ -- 12
+if$ -- 249
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 8
+newline$ -- 22
+num.names$ -- 8
+pop$ -- 20
+preamble$ -- 1
+purify$ -- 14
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 117
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 16
+width$ -- 5
+write$ -- 43
