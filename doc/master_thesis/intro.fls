@@ -61,6 +61,38 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /dev/null
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3dvipdfmx.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3dvipdfmx.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/nomencl/nomencl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/nomencl/nomencl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -92,6 +124,50 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/min6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmss.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmss.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
@@ -104,31 +180,24 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
@@ -142,39 +211,30 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT intro.toc
 INPUT intro.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/min6.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT intro.toc
 INPUT intro.nls
 INPUT intro.nls
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT fig/cp.pdf
-INPUT extractbb -B cropbox -O fig/cp.pdf
-INPUT fig/lambda.pdf
-INPUT extractbb -B cropbox -O fig/lambda.pdf
-INPUT fig/mu.pdf
-INPUT extractbb -B cropbox -O fig/mu.pdf
-INPUT fig/rho.pdf
-INPUT extractbb -B cropbox -O fig/rho.pdf
-INPUT fig/pr.pdf
-INPUT extractbb -B cropbox -O fig/pr.pdf
+INPUT fig/mp_cp.pdf
+INPUT extractbb -B cropbox -O fig/mp_cp.pdf
+INPUT fig/mp_lambda.pdf
+INPUT extractbb -B cropbox -O fig/mp_lambda.pdf
+INPUT fig/mp_mu.pdf
+INPUT extractbb -B cropbox -O fig/mp_mu.pdf
+INPUT fig/mp_rho.pdf
+INPUT extractbb -B cropbox -O fig/mp_rho.pdf
+INPUT fig/mp_pr.pdf
+INPUT extractbb -B cropbox -O fig/mp_pr.pdf
+INPUT fig/pr10_recf.pdf
+INPUT extractbb -B cropbox -O fig/pr10_recf.pdf
+INPUT fig/pr10_renu.pdf
+INPUT extractbb -B cropbox -O fig/pr10_renu.pdf
+INPUT fig/pr10heatflux_recfdt.pdf
+INPUT extractbb -B cropbox -O fig/pr10heatflux_recfdt.pdf
+INPUT fig/pr10heatflux_renudt.pdf
+INPUT extractbb -B cropbox -O fig/pr10heatflux_renudt.pdf
 INPUT appendix.tex
 INPUT appendix.tex
 INPUT intro.bbl

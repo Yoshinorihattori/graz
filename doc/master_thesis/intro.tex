@@ -5,6 +5,10 @@
 \usepackage{comment}
 \usepackage{amssymb}
 
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+
 %https://www.overleaf.com/learn/latex/Nomenclatures
 \usepackage{nomencl}
 \makenomenclature
@@ -40,6 +44,7 @@
 \nomenclature[C]{$V$}{Constant Volume}
 \nomenclature[C]{$\rho$}{Friction Index}
 \printnomenclature
+
 
 \chapter{Introduction}
 \section{Study background}
@@ -92,7 +97,7 @@ Therefore, it is nessesary to get experimental data for correlations of heat tra
 
 %attention!!!!!!!!!!!
 Many studies have pointed out that a heat transfer coefficient varies depending on the type of flow: laminar, transition and turbulent.
-Gnienlinski\cite{Gnielinski1975} showed a calculation method about heat transfer coefficients for the laminar, transitional and turbulent flows.
+Gnienlinski\cite{Gnielinski1975}\cite{Gnielinski1976} showed a calculation method about heat transfer coefficients for the laminar, transitional and turbulent flows.
 Bertsche et al.\cite{Bertsche2016} focused on reliable prediction of the heat transfer coefficient for transitional flows.
 In their study, they showed experimental the heat transfer coefficients for the Reynolds number, $500 < Re < 23000$, and the Prandtl number, $7 < Pr < 41$.\\
 However, not so many data is available for experimental data of laminar-to-turbulent transitional region.
@@ -101,6 +106,7 @@ In this study, the author focused on forced convective heat transfer in flow of 
 A 50/50vol\% mixture of water and glycole, which is a typical liquid coolant in automotive applications, was used as an operating fluid.
 The experiment was carried out by considering a board range of Reynolds numbers, spanning from a laminar to fully turbulent flow.
 Moreover, the measurements of the wall friction coefficients was also performed in this study.
+
 
 \subsection{Skin friction coefficients}
 The skin friction coefficients for laminar flow is descrived following equation.
@@ -155,7 +161,7 @@ specific heat capacity
 \begin{figure}[ht]
 	\vspace{0zh}
 	\begin{center}
-		\includegraphics[width=0.65\linewidth]{fig/cp.pdf}
+		\includegraphics[width=0.65\linewidth]{fig/mp_cp.pdf}
 		\vspace{-1zh}
 		\caption{Specific heat capacisty vary with temperature}
 		\label{cp}
@@ -172,7 +178,7 @@ thermal condictivity
 \begin{figure}[ht]
 	\vspace{0zh}
 	\begin{center}
-		\includegraphics[width=0.65\linewidth]{fig/lambda.pdf}
+		\includegraphics[width=0.65\linewidth]{fig/mp_lambda.pdf}
 		\vspace{-1zh}
 		\caption{Thermal conductivity vary with temperature}
 		\label{lambda}
@@ -189,7 +195,7 @@ dynamic viscosity
 \begin{figure}[ht]
 	\vspace{0zh}
 	\begin{center}
-		\includegraphics[width=0.65\linewidth]{fig/mu.pdf}
+		\includegraphics[width=0.65\linewidth]{fig/mp_mu.pdf}
 		\vspace{-1zh}
 		\caption{Dynamic viscosity vary with temperature}
 		\label{mu}
@@ -204,9 +210,9 @@ density
 	\label{rho}
 \end{equation}
 \begin{figure}[ht]
-	\vspace{0zh}
+    \vspace{0zh}
 	\begin{center}
-		\includegraphics[width=0.65\linewidth]{fig/rho.pdf}
+		\includegraphics[width=0.65\linewidth]{fig/mp_rho.pdf}
 		\vspace{-1zh}
 		\caption{Density vary with temperature}
 		\label{rho}
@@ -223,7 +229,7 @@ prandtl number
 \begin{figure}[ht]
 	\vspace{0zh}
 	\begin{center}
-		\includegraphics[width=0.65\linewidth]{fig/pr.pdf}
+		\includegraphics[width=0.65\linewidth]{fig/mp_pr.pdf}
 		\vspace{-1zh}
 		\caption{Prandtl number vary with temperature}
 		\label{pr}
@@ -246,12 +252,124 @@ prandtl number
 \section{Experimental result and variation}
 \subsection{Validation of experimental result for $Pr_{w}=7$}
 \subsection{Validation of experimental result for $Pr_{w}=10$}
+
+
+\begin{figure}[ht]
+	\vspace{0zh}
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{fig/pr10_recf.pdf}
+		\vspace{-1zh}
+		\caption{The comparison between skin frictin coefficient $C_{f}$ and bulk Reynolds number $Re_{b}$ for $Pr_{w} = 10$}
+		\label{pr}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
+
+\begin{figure}[ht]
+	\vspace{0zh}
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{fig/pr10_renu.pdf}
+		\vspace{-1zh}
+		\caption{The comparison between heat transfer coefficient $Nu$ and bulk Reynolds number $Re_{b}$ for $Pr_{w} = 10$}
+		\label{pr}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Summary of the experimental parameters for $Pr_{w}=10$ and performance of the skin friction coefficient\ $C_{f}$, Nusselt number\ $Nu$.}
+\vspace{1zh}
+\label{pr10}
+\begin{tabular}{SrrSlSSSS} \toprule%\boldmath
+{{$Pr_{w}$}} & {$Re_{b}$} & {$C_{f}$} & {$Nu$} & {$T_{w}\ [^\circ C]$} & {$T_{b}\ [^\circ C]$}  & {$\Delta T\ [^\circ C]$}  & {$q_{el}\ [kW/m^{2}]$} & {$q_{hc}\ [kW/m^{2}]$} \\ \midrule
+10.0 & 3981  & 0.00999 & 41.3  & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
+10.1 & 4047  & 0.00988 & 42.2  & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
+9.9  & 4128  & 0.00983 & 42.9  & 71.6 & 67.2 & 4.4  & 8.2  & 6.6  \\
+10.0 & 3981  & 0.00999 & 41.3  & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
+10.1 & 4047  & 0.00988 & 42.2  & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
+9.9  & 4128  & 0.00983 & 42.9  & 71.6 & 67.2 & 4.4  & 8.2  & 6.6  \\
+10.0 & 3981  & 0.00999 & 41.3  & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
+10.1 & 4047  & 0.00988 & 42.2  & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Validation of experimental result for $Pr_{w}=13$}
 \subsection{Validation of experimental result for $Pr_{w}=13$}
 
 \section{Discussion}
 \subsection{Reproducibility}
+\subsection{Secoundary flow}
 \subsection{Influence of heat flux}
+\begin{figure}[ht]
+	\vspace{0zh}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{fig/pr10heatflux_recfdt.pdf}
+		\vspace{-3zh}
+		\caption{The comparison between skin frictin coefficient $C_{f}$ and bulk Reynolds number $Re_{b}$ for $Pr_{w} = 10$ vary with temperature defference $\Delta T$ between a pipe wall $T_{w}$ and the bulk $T_{b}$.}
+		\label{}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
+
+\begin{figure}[ht]
+	\vspace{0zh}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{fig/pr10heatflux_renudt.pdf}
+		\vspace{-3zh}
+		\caption{The comparison between heat transfer coefficient $Nu$ and bulk Reynolds number $Re_{b}$ for $Pr_{w} = 10$ vary with temperature defference $\Delta T$ between a pipe wall $T_{w}$ and the bulk $T_{b}$.}
+		\label{}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
+
+
+\begin{table}[h]
+\centering
+\caption{Summary of the experimental parameters for $Pr_{w}=10$ and performance of the skin friction coefficient\ $C_{f}$, Nusselt number\ $Nu$ and temperature defference\ $\Delta T=T_{w}-T_{b}$.}
+\vspace{1zh}
+\label{heatflux}
+\begin{tabular}{SrrSlSSSS} \toprule%\boldmath
+{{$Pr_{w}$}} & {$Re_{b}$} & {$C_{f}$} & {$Nu$} & {$T_{w}\ [^\circ C]$} & {$T_{b}\ [^\circ C]$}  & {$\Delta T\ [^\circ C]$}  & {$q_{el}\ [kW/m^{2}]$} & {$q_{hc}\ [kW/m^{2}]$} \\ \midrule
+10.0 & 3981  & 0.00999 & 41.3  & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
+10.1 & 4047  & 0.00988 & 42.2  & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
+9.9  & 4128  & 0.00983 & 42.9  & 71.6 & 67.2 & 4.4  & 8.2  & 6.6  \\
+9.9  & 4141  & 0.00952 & 47.3  & 71.8 & 57.9 & 14.0 & 26.7 & 23.1 \\ \midrule
+10.0 & 6496  & 0.00897 & 68.3  & 71.5 & 67.8 & 3.7  & 11.1 & 8.9  \\
+10.0 & 6569  & 0.00869 & 71.0  & 71.3 & 65.6 & 5.7  & 16.8 & 14.1 \\
+9.9  & 6423  & 0.00879 & 71.2  & 71.5 & 62.8 & 8.8  & 25.7 & 22.0 \\
+10.0 & 6337  & 0.00920 & 71.3  & 71.4 & 61.1 & 10.2 & 30.0 & 25.6 \\ \midrule
+9.9  & 9508  & 0.00809 & 91.5  & 71.5 & 69.5 & 2.1  & 8.8  & 6.6  \\
+10.0 & 9320  & 0.00819 & 93.6  & 71.4 & 67.5 & 3.9  & 15.6 & 12.8 \\
+10.0 & 9518  & 0.00815 & 97.0  & 71.3 & 66.1 & 5.2  & 21.2 & 17.8 \\
+9.9  & 9380  & 0.00818 & 97.8  & 71.7 & 63.6 & 8.1  & 32.4 & 27.8 \\ \midrule
+10.0 & 12548 & 0.00738 & 114.3 & 71.4 & 69.7 & 1.7  & 8.9  & 6.7  \\
+10.0 & 12458 & 0.00746 & 116.8 & 71.4 & 68.6 & 2.8  & 14.6 & 11.7 \\
+9.9  & 12457 & 0.00761 & 118.8 & 71.6 & 67.1 & 4.5  & 22.6 & 19.0 \\
+9.9  & 12427 & 0.00759 & 121.0 & 71.6 & 64.7 & 6.8  & 33.6 & 29.1 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\caption{Direct Numerical Simuration\ (DNS) and Large Eggy Simuration\ (LES) for $Pr_{w} = 10$ vary with heat flux $q_{w}=20\ [kW/m^{2}]$ and $q_{w}=?\ [kW/m^{2}]$}
+\vspace{1zh}
+\label{simuration}
+\begin{tabular}{llllllllllll} \toprule
+{Type} & {$Pr_{w}$} & {$Re_{\tau}$}& {$Re_{b}$} & {$C_{f}$} & {$Nu$} & {$T_{w}\ [^\circ C]$} & {$T_{b}\ [^\circ C]$}  & {$\Delta T\ [^\circ C]$}  & {$q_{w}\ [kW/m^{2}]$} \\ \midrule
+DNS & 10.0 & 360 & 4176  & 0.00904 & 43.8  & 71.6 & 58.5 & 13.1 & 20.0  \\
+DNS & 10.0 & 360 & 4176  & ?       & ?     & 71.6 & ?    & ?    & ?  \\ \midrule
+DNS & 10.0 & 500 & 6587  & 0.00851 & 69.0  & 71.6 & 63.3 & 8.3  & 20.0 \\
+DNS & 10.0 & 500 & 6587  & ?       & ?     & 71.6 & ?    & ?    & ? \\ \midrule
+LES & 10.0 & 600 & 9612  & 0.00779 & 84.8  & 71.6 & 64.8 & 6.8  & 20.0 \\ \midrule
+LES & 10.0 & 750 & 12638 & 0.00704 & 106.1 & 71.6 & 66.2 & 5.4  & 20.0 \\ \bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Scattering and proberbility density function}
+\subsection{Comparison with Bertsche}
 \subsection{Comparison with DNS and LES}
 \chapter{Conclusion}
 
