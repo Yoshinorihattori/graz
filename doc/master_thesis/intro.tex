@@ -151,7 +151,11 @@ He presented transitional flow as a liner interpolation between turbulent and la
 
 \chapter{Methodology}
 \section{Material properties}
+
 A 50/50vol\% mixture of water and glycole which is a typical liquid coolant in automotive applications were used as a operating fluid.
+The material properties of the operationg fluid is temperature dependecy.
+As bigger temperature difference between a pipe wall and the bulk, the material properties pronounced.
+
 
 specific heat capacity
 \begin{equation}
@@ -236,6 +240,18 @@ prandtl number
 	\end{center}
 	\vspace{0zh}
 \end{figure}
+
+\subsection{Effect of viscosity and density}
+Effect of viscosity 20\%
+Effect og density   0.5\%
+\subsection{Cooling and heating}
+Bertsche et al.\cite{Bertsche2016} shows experimental investigation on heat transfer in cylindrical pipe flow by using a 50/50vol\% mixture of water and glycole with cooling.
+The operationg fluid is the same as our study, however they measured the heat transfer by cooling the liquid.
+For cooling the liquid, the temperature at the wall is lower than bulk temperature.
+In other way, for heating the liquid, the temperature at the wall is higher that bulk temperature.
+As shown in material properties, the viscosity show strong temperature dependence and the curve isn't linear function.
+Thus, the heat transfer doesn't shows the same value with cooling and heating even though a Prandtl number is the same.
+
 
 \clearpage
 \section{Hydro and thermal boundary layer}
@@ -332,18 +348,26 @@ prandtl number
 \label{heatflux}
 \begin{tabular}{SrrSlSSSS} \toprule%\boldmath
 {{$Pr_{w}$}} & {$Re_{b}$} & {$C_{f}$} & {$Nu$} & {$T_{w}\ [^\circ C]$} & {$T_{b}\ [^\circ C]$}  & {$\Delta T\ [^\circ C]$}  & {$q_{el}\ [kW/m^{2}]$} & {$q_{hc}\ [kW/m^{2}]$} \\ \midrule
-10.0 & 3981  & 0.00999 & 41.3  & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
-10.1 & 4047  & 0.00988 & 42.2  & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
-9.9  & 4128  & 0.00983 & 42.9  & 71.6 & 67.2 & 4.4  & 8.2  & 6.6  \\
-9.9  & 4141  & 0.00952 & 47.3  & 71.8 & 57.9 & 14.0 & 26.7 & 23.1 \\ \midrule
-10.0 & 6496  & 0.00897 & 68.3  & 71.5 & 67.8 & 3.7  & 11.1 & 8.9  \\
-10.0 & 6569  & 0.00869 & 71.0  & 71.3 & 65.6 & 5.7  & 16.8 & 14.1 \\
-9.9  & 6423  & 0.00879 & 71.2  & 71.5 & 62.8 & 8.8  & 25.7 & 22.0 \\
-10.0 & 6337  & 0.00920 & 71.3  & 71.4 & 61.1 & 10.2 & 30.0 & 25.6 \\ \midrule
+10.0 & 3981  & 0.00999 & 41.3 & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
+10.1 & 4047  & 0.00988 & 42.2 & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
+9.9  & 4128  & 0.00983 & 42.9 & 71.6 & 67.2 & 4.4  & 8.2  & 6.6  \\
+9.9  & 4141  & 0.00952 & 47.3 & 71.8 & 57.9 & 14.0 & 26.7 & 23.1 \\ \midrule
+10.0 & 6496  & 0.00897 & 68.3 & 71.5 & 67.8 & 3.7  & 11.1 & 8.9  \\
+10.0 & 6569  & 0.00869 & 71.0 & 71.3 & 65.6 & 5.7  & 16.8 & 14.1 \\
+9.9  & 6423  & 0.00879 & 71.2 & 71.5 & 62.8 & 8.8  & 25.7 & 22.0 \\
+10.0 & 6337  & 0.00920 & 71.3 & 71.4 & 61.1 & 10.2 & 30.0 & 25.6 \\ \midrule
+10.0 & 8540  & 0.00836 & 83.9 & 71.5 & 69.2 & 2.2  & 8.7  & 6.6  \\
+10.0 & 8194  & 0.00843 & 84.9 & 71.4 & 66.9 & 4.5  & 16.3 & 13.4 \\
+10.0 & 8315  & 0.00847 & 87.2 & 71.4 & 65.4 & 6.0  & 21.9 & 18.5 \\
+10.0 & 8347  & 0.00848 & 90.1 & 71.4 & 62.1 & 9.3  & 34.1 & 29.6 \\ \midrule
 9.9  & 9508  & 0.00809 & 91.5  & 71.5 & 69.5 & 2.1  & 8.8  & 6.6  \\
 10.0 & 9320  & 0.00819 & 93.6  & 71.4 & 67.5 & 3.9  & 15.6 & 12.8 \\
 10.0 & 9518  & 0.00815 & 97.0  & 71.3 & 66.1 & 5.2  & 21.2 & 17.8 \\
 9.9  & 9380  & 0.00818 & 97.8  & 71.7 & 63.6 & 8.1  & 32.4 & 27.8 \\ \midrule
+10.0 & &&&&&&&\\
+10.0 & &&&&&&&\\
+10.0 & &&&&&&&\\
+10.0 & &&&&&&&\\ \midrule
 10.0 & 12548 & 0.00738 & 114.3 & 71.4 & 69.7 & 1.7  & 8.9  & 6.7  \\
 10.0 & 12458 & 0.00746 & 116.8 & 71.4 & 68.6 & 2.8  & 14.6 & 11.7 \\
 9.9  & 12457 & 0.00761 & 118.8 & 71.6 & 67.1 & 4.5  & 22.6 & 19.0 \\
@@ -357,20 +381,23 @@ prandtl number
 \caption{Direct Numerical Simuration\ (DNS) and Large Eggy Simuration\ (LES) for $Pr_{w} = 10$ vary with heat flux $q_{w}=20\ [kW/m^{2}]$ and $q_{w}=?\ [kW/m^{2}]$}
 \vspace{1zh}
 \label{simuration}
-\begin{tabular}{llllllllllll} \toprule
+\begin{tabular}{lllrrrllllrl} \toprule
 {Type} & {$Pr_{w}$} & {$Re_{\tau}$}& {$Re_{b}$} & {$C_{f}$} & {$Nu$} & {$T_{w}\ [^\circ C]$} & {$T_{b}\ [^\circ C]$}  & {$\Delta T\ [^\circ C]$}  & {$q_{w}\ [kW/m^{2}]$} \\ \midrule
-DNS & 10.0 & 360 & 4176  & 0.00904 & 43.8  & 71.6 & 58.5 & 13.1 & 20.0  \\
-DNS & 10.0 & 360 & 4176  & ?       & ?     & 71.6 & ?    & ?    & ?  \\ \midrule
-DNS & 10.0 & 500 & 6587  & 0.00851 & 69.0  & 71.6 & 63.3 & 8.3  & 20.0 \\
-DNS & 10.0 & 500 & 6587  & ?       & ?     & 71.6 & ?    & ?    & ? \\ \midrule
-LES & 10.0 & 600 & 9612  & 0.00779 & 84.8  & 71.6 & 64.8 & 6.8  & 20.0 \\ \midrule
-LES & 10.0 & 750 & 12638 & 0.00704 & 106.1 & 71.6 & 66.2 & 5.4  & 20.0 \\ \bottomrule
+DNS & 10.0 & 360 & 4165  & 0.00904 & 43.8  & 71.2 & 58.5 & 13.1 & 20.0  \\
+DNS & 10.0 & 360 & 4165  & ?       & ?     & 71.2 & ?    & ?    & 40.0  \\ \midrule
+DNS & 10.0 & 500 & 6587  & 0.00851 & 69.0  & 71.2 & 63.3 & 8.3  & 20.0 \\
+DNS & 10.0 & 500 & 6587  & ?       & ?     & 71.2 & ?    & ?    & 40.0 \\ \midrule
+LES & 10.0 & 600 & 8498  & 0.00779 & 84.8  & 71.2 & 64.8 & 6.8  & 20.0 \\ \midrule
+LES & 10.0 & 750 & 11465 & 0.00704 & 106.1 & 71.2 & 66.2 & 5.4  & 20.0 \\ \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Scattering and proberbility density function}
 \subsection{Comparison with Bertsche}
 \subsection{Comparison with DNS and LES}
+\subsection{Effect of the presure popower}
+\subsection{Effect of material properties}
+\subsection{}
 \chapter{Conclusion}
 
 
