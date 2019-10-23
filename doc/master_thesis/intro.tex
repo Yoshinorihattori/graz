@@ -7,6 +7,7 @@
 
 \usepackage{booktabs}
 \usepackage{siunitx}
+\usepackage{breqn}%数式を改行する
 
 
 %https://www.overleaf.com/learn/latex/Nomenclatures
@@ -152,6 +153,7 @@ He presented transitional flow as a liner interpolation between turbulent and la
 \chapter{Methodology}
 \section{Material properties}
 
+\subsection{Parameters}
 A 50/50vol\% mixture of water and glycole which is a typical liquid coolant in automotive applications were used as a operating fluid.
 The material properties of the operationg fluid is temperature dependecy.
 As bigger temperature difference between a pipe wall and the bulk, the material properties pronounced.
@@ -242,8 +244,13 @@ prandtl number
 \end{figure}
 
 \subsection{Effect of viscosity and density}
+DNS
 Effect of viscosity 20\%
 Effect og density   0.5\%
+experimental
+
+\clearpage
+
 \subsection{Cooling and heating}
 Bertsche et al.\cite{Bertsche2016} shows experimental investigation on heat transfer in cylindrical pipe flow by using a 50/50vol\% mixture of water and glycole with cooling.
 The operationg fluid is the same as our study, however they measured the heat transfer by cooling the liquid.
@@ -251,17 +258,258 @@ For cooling the liquid, the temperature at the wall is lower than bulk temperatu
 In other way, for heating the liquid, the temperature at the wall is higher that bulk temperature.
 As shown in material properties, the viscosity show strong temperature dependence and the curve isn't linear function.
 Thus, the heat transfer doesn't shows the same value with cooling and heating even though a Prandtl number is the same.
-
+\begin{figure}[ht]
+    \vspace{0zh}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{fig/heating_and_cooling.pdf}
+		\vspace{-2zh}
+		\caption{Thermal boundary layer grows in horizontal axis for heating liquid(left) and cooling liquid(right).}
+		\label{heating}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
 
 \clearpage
 \section{Hydro and thermal boundary layer}
 
 \chapter{Experimental facilities}
 \section{Experimental loop}
+%Experimental Setup
+Figure. \ref{loop} shows a diagram of the experimental loop.
+The experimental basically loop consists of a heat exchanger, a pump, a Coriolis mass flow rate, a welder, a reservoir, and a test section.
+The heat exchanger keeps a thermal stationary condition in the flow pipe.
+The Coriolis mass flow rate is controlled by the pump and a bypass valve C, which is located in parallel to the pump.
+The pipe is thermally insulated by using glass wool.\\
+
+\begin{figure}[ht]
+	\vspace{0zh}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{fig/loop.pdf}
+		\vspace{-3zh}
+		\caption{Process flow diagram of the test facilities including test section.}
+		\label{loop}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
+
+
 \section{Test section}
-\section{Wall temperature distribution}
+
+\subsection{Thermal and velocity boundary layer}
+Figure. \ref{testsection} shows the velocity and thermal boundary layer of developments vary with the horizontal axis in the test section.
+%thermal boundary layer of WHAT???
+The velocity and thermal profiles are shown in blue and red color, respectively.
+The test section is made of stainless steel (1.4301) with an inner diameter $d_{i}=12[mm]$ and outer diameter $d_{o}=15[mm]$.
+Highly accurate resistance thermall probes (PT-100) are used to find out the inlet and outlet bulk temperatures ($T_{in}$, $T_{out}$and wall temperature ($T_{w}$).
+Moreover, thermocouples (Type-K) are used to measure temperature gradients in the flow direction.
+
+The test section consists of entrance, heated and thermal equalized parts.
+\begin{enumerate}
+  \item Entrance part\\
+  The first part of the test section is a $1.2\ [m]$ length entrance part, which is sufficiently long to ensure producing dynamically developed flow condition at the exist.
+  The bulk temperature $T_{in}$ at this section was measured by PT-100.
+  \item Heated part\\
+  The second part of the test section is a $2.0\ [m]$ length heated part, which is sufficiently long to ensure producing thermal fully developed flow condition at the exist.
+  The tube wall were heated electrically by the welder which provides high current and low voltages to keep the uniform heat flux condition in a inner pipe flow.
+  Convective heat transfer is independent of the horizontal axis in fully developed flow and constant heat flux condition.
+  The wall temperature $(T_{w})$ at the end of this section were measured by PT-100.
+  \item Thermal equalized part\\
+  The third part of the test section is the thermall equalized part, which includes a Static mixture.
+  The static mixture forms turbulent and vortex.
+  Then, the thermal gradients of fluids become averaged, and bull temperature $T_{out}$ is measured.
+\end{enumerate}
+
+\begin{figure}[ht]
+	\vspace{0zh}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{fig/testsection.pdf}
+		\vspace{-3zh}
+		\caption{test section}
+		\label{testsection}
+	\end{center}
+	\vspace{0zh}
+\end{figure}
+
+\subsection{Length-to-diameter ratio}
+%Ref. Experiments in Pipe Flows at Transitional and Very High Reynolds Numbers p25-
+The length-to-diameter ratio is an important parameter to achieve the fully developed turbulent condition in the test section.
+The entrance section has an inner diameter of $d_{i}=12mm$, and the length of $L=1.2m$ which length-to-diameter ratio is $L/d_{i}=100$.
+Patel et.al.\cite{Zanoun2009} showed suitable the length-to-diameter ratio for fully developed turbulent flows.
+According to their study, they found that the minimum developing length of $L/d_{i}=70d_{i}$.
+Therefore, the length-to-diameter ratio of the entrance section in this experimental is long enough to ensure the fully developed turbulent flow state.
+
+\section{Conductive heat transfer equation at the pipe wall}
 \section{Evaluation procedure}
-\section{Measurement Uncertainty}
+
+\clearpage
+\section{Uncertainty Analysis of Measurement}
+Uncertainty of measurement comprises many components such as bias or systematic error and random error in measuring dimension.
+The measured value for dimension is the sum of true value, bias or systematic error and random error as shown in equation \ref{uncertainty_components}.
+\begin{equation}
+    x = x_{true}+x_{bias}+x_{random}
+    \label{uncertainty_components}
+\end{equation}
+The bias or systematic error may be evaluated from statical distribution and can be characterized by experimental standard deviation.
+The uncertainty of measurement was discussed by using ``Guide to the Expression of Uncertainty in Measurement'' \cite{jcgm2008}.
+
+As shown in Chapter ?? in section ??, Reynolds number $Re$, skin friction coefficient $C_{f}$ and Nusselt number $Nu$ was calcurated from following equations (\ref{re_detail})(\ref{cf})(\ref{nu}).
+\begin{equation}
+    Re = \frac{UL}{\nu} = \frac{4\rho \dot{m}}{\mu \pi d_{i}}
+    \label{re_detail}
+\end{equation}
+\begin{equation}
+    C_{f} = \frac{\tau_{w}}{\rho_{b}\frac{U_{b}^{2}}{2}}, \ \tau_{w}=\frac{\Delta P}{\Delta z}\frac{d_{i}}{4}, \ U_{b}=\frac{4\dot{m}}{\rho_{b}\pi d_{i}^{2}}
+    \label{cf_detail}
+\end{equation}
+\begin{equation}
+    C_{f} = \frac{\Delta p}{\Delta z} \frac{d_{i}^{5}\pi^{2}\rho_{b}}{32\dot{m}^{2}}
+    \label{cf}
+\end{equation}
+\begin{equation}
+   Nu = \frac{\alpha d_{i}}{\lambda} = \frac{q_{w}d_{i}}{\lambda \left( T_{w}-T_{out} \right)}, \ q_{w}=\frac{\dot{m}C_{p} \left( T_{out}-T_{in} \right)}{d_{i}\pi L_{heated}}
+   \label{nu_detail}
+\end{equation}
+\begin{equation}
+   Nu = \frac{\dot{m}C_{p,b} \left( T_{out} - T_{in} \right) }{\lambda_{b} \left( T_{w} - T_{out} \right) \pi L_{heated}}
+   \label{nu}
+\end{equation}
+Each parameters effect measurement uncertainty in each sensitivity in sensors.
+The right choice of measurement sensors enable us to reduce measurement uncertainty.
+However, there is a limitation in reality.
+Cramer-Rao lower bound (CRLB) theory indicates the smallest uncertainty limit of estimating variance of deterministic process.
+The maximum possible error in equations (\ref{re_detail})(\ref{cf})(\ref{nu}) can be estimated from measurement data.
+The uncertainty of skin friction coefficient, $C_{f}$ is calcurated by equation (\ref{delta_cf}).
+\begin{equation}
+   \Delta C_{f} = \sqrt{\sum \left( \frac{\partial C_{f}}{\partial X_{i}}\Delta X_{i} \right)^{2}}
+   \label{delta_cf}
+\end{equation}
+The uncertainty of skin friction coefficient, $Nu$ is calcurated by equation (\ref{delta_nu}).
+\begin{equation}
+   \Delta Nu = \sqrt{\sum \left( \frac{\partial Nu}{\partial X_{i}}\Delta X_{i} \right)^{2}}
+   \label{delta_nu}
+\end{equation}
+Here, $\frac{\partial C_{f}}{\partial X_{i}}$ and $\frac{\partial Nu}{\partial X_{i}}$ represents uncertainty elements and assumed to be statistically independent.
+In addition, $\Delta X_{i}$ represents absolute error of each sensors.
+The resulting total measurement uncertaity in skin friction coefficient is shown in equation (\ref{delta_cf})
+\begin{align}
+    \Delta C_{f} & = \sqrt{\left(\frac{\partial C_{f}}{\partial \Delta p}\Delta \left( \Delta p \right) \right)^{2} + \left(\frac{\partial C_{f}}{\partial \rho_{out}}\Delta \rho_{out} \right)^{2} + \left(\frac{\partial C_{f}}{\partial \dot{m}}\Delta \dot{m} \right)^{2}}\\
+    & = C_{f} \cdot \sqrt{\left( \frac{\Delta \left(\Delta p \right)}{\Delta p}\right)^{2} + \left(\frac{\Delta \rho_{out}}{\rho_{out}}\right)^{2} + \left( 2 \frac{\Delta \dot{m}}{\dot{m}}\right)^{2}}
+    \label{delta_cf}
+\end{align}
+
+The resulting total measurement uncertaity in Nusselt number is shown in equation (\ref{delta_nu})
+
+\begin{align}
+    \Delta Nu & =
+    \sqrt{
+        \begin{aligned}
+        \left(\frac{\partial Nu}{\partial \dot{m}}\Delta \dot{m}\right)^{2} + & \left(\frac{\partial Nu}{\partial c_{p,out}}\Delta c_{p,out}\right)^{2} + \left(\frac{\partial Nu}{\partial \lambda_{out}}\Delta \lambda_{out}\right)^{2} +\\
+        & \left(\frac{\partial Nu}{\partial T_{in}}\Delta T_{in}\right)^{2}
+        + \left(\frac{\partial Nu}{\partial T_{out}}\Delta T_{out}\right)^{2}
+        + \left(\frac{\partial Nu}{\partial T_{w}}\Delta T_{w}\right)^{2}
+        \end{aligned}
+    }\\
+    & = Nu \cdot \sqrt{
+        \begin{aligned}
+        \left(\frac{\Delta \dot{m}}{\dot{m}}\right)^{2}
+        + & \left(\frac{\Delta c_{p,out}}{c_{p,out}}\right)^{2}
+        + \left(\frac{\Delta \lambda_{out}}{\lambda_{out}}\right)^{2}+\\
+        & \left(\frac{\Delta T}{T_{in} - T_{out}}\right)^{2}
+        + \left(\frac{\Delta T}{T_{out} - T_{w}}\right)^{2}
+        + \left(\frac{\Delta T\left( T_{in} - T_{w}\right)}{\left( T_{in} - T_{out}\right)\left( T_{out}-T_{w} \right)} \right)^{2}
+        \end{aligned}
+        }
+\end{align}
+
+
+Table (\ref{absolute_error}) shows absolute error for each sensors.
+As shown in material properties, density, heat capasity and heat conductivity are temperature dependence.
+Therefore, those absolute error influenced by the sensitivity of the temperature sensor, PT100.
+\begin{table}[h]
+\centering
+\caption{Absolute error of contribution factor of the Reynolds number, skin friction coefficient and Nusselt number.}
+\vspace{1zh}
+\label{absolute_error}
+\begin{tabular}{llll} \toprule%\boldmath
+{Contribution} & {Symbol}          & {Absolute error}   & {Unit}\\ \midrule
+Mass flow rate & $\Delta \dot{m}$  & $0.20E-3\dot{m}$   & $kg\cdot s^{-1}$\\
+Pressure       & $\Delta(\Delta p)$& $0.35E-3\Delta p$  & $Pa$\\
+Temperature    & $\Delta T$        & 0.040              & $K$\\
+Density        & $\Delta \rho_{out}$& $0.26E-1$         & $kg\cdot m^{-3}$\\
+Thermal conductivity & $\lambda_{out}$& $2.4E-5$        & $W\cdot m^{-1}\cdot K^{-1}$\\
+Heat capasity  & $\Delta c_{p,out}$& 0.18               & $J\cdot kg^{-1}\cdot K^{-1}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\subsection{Case study}
+In this section, the author showed evaluation procedure to calcurate measurement uncertainty for Reynolds number, skin friction coefficient and Nusselt number, respectively.
+For this case study, Table (\ref{case_study}) shows one of the measurement data in this study.
+
+\begin{table}[h]
+\centering
+\caption{}
+\vspace{1zh}
+\label{case_study}
+\begin{tabular}{lllllllllll} \toprule%\boldmath
+{Case} & {$Pr_{w}$} & {$Re$}  & {$C_{f}$} & {$Nu$} & {$\dot{m}$} & {$\Delta p$} & {$T_{w}$} & {$\rho_{out}$} & {$\lambda_{out}$} & $c_{p,out}$\\ \midrule
+Case A & 10.0 & 4100 & 0.0103 & 38.7 & 0.044 & 253.8 & 71.2 & 1041 & 0.420 & 3.55\\
+Case B &&&&&&&&&&\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Measurement uncertainty for Reynolds number was shown in equation ---
+
+
+Measurement uncertainty for skin friction coefficient was shown in equation (\ref{delta_cf}).
+By substituting absolute error shown in table (\ref{absolute_error}) into the equation (\ref{delta_cf}), which yeilds
+\begin{equation}
+   \Delta C_{f} = C_{f} \cdot \sqrt{\left( \frac{0.35E-3\Delta p}{\Delta p}\right)^{2} + \left(\frac{0.26E-1}{\rho_{out}}\right)^{2} + \left( 2\ \frac{0.20E-3\dot{m}}{\dot{m}}\right)^{2}}
+   \label{case_study_cf1}
+\end{equation}
+Then, by substituting measurement data shown in table (\ref{case_study})into equation (\ref{delta_cf}), measurement uncertainty for skin friction ocefficient is calcurated.
+\begin{align}
+    \Delta C_{f} & = 0.0103 \cdot \sqrt{\left( \frac{0.35E-3\cdot 253.8}{253.8}\right)^{2} + \left(\frac{0.26E-1}{1041}\right)^{2} +   \left( 2\ \frac{0.20E-3\cdot 0.044}{0.044}\right)^{2}}\\
+    &= 0.0103 \cdot \sqrt{ \left( 0.00035 \right)^{2} + \left( 0.0004 \right)^{2} + \left( 0.000025 \right)^{2} }\\
+    &= 5.5E-6
+   \label{case_study_cf2}
+\end{align}
+
+Measurement uncertainty for Nusselt number was shown in equation (\ref{delta_nu}).
+By substituting absolute error shown in table (\ref{absolute_error}) into the equation (\ref{delta_nu}), which yeilds
+\begin{align}
+    \Delta Nu & = Nu\cdot
+    \sqrt{
+    \begin{aligned}
+        & \left(\frac{0.20E-3\dot{m}}{\dot{m}}\right)^{2}
+        + \left(\frac{0.18}{c_{p,out}}\right)^{2}
+        + \left(\frac{2.4E-5}{\lambda_{out}}\right)^{2}+\\
+        & \left(\frac{0.0040}{T_{in} - T_{out}}\right)^{2}
+        + \left(\frac{0.0040}{T_{out} - T_{w}}\right)^{2}
+        + \left(\frac{0.0040\cdot \left( T_{in} - T_{w}\right)}{\left( T_{in} - T_{out}\right)\left( T_{out}-T_{w} \right)} \right)^{2}
+    \end{aligned}
+    }\\
+    & = Nu\cdot
+    \sqrt{
+    \begin{aligned}
+        & \left(\frac{\Delta \dot{m}}{\dot{m}}\right)^{2}
+        + \left(\frac{\Delta c_{p,out}}{c_{p,out}}\right)^{2}
+        + \left(\frac{\Delta \lambda_{out}}{\lambda_{out}}\right)^{2}+\\
+        & \left(\frac{\Delta T}{T_{in} - T_{out}}\right)^{2}
+        + \left(\frac{\Delta T}{T_{out} - T_{w}}\right)^{2}
+        + \left(\frac{\Delta T\left( T_{in} - T_{w}\right)}{\left( T_{in} - T_{out}\right)\left( T_{out}-T_{w} \right)} \right)^{2}
+        \end{aligned}
+        }
+\end{align}
+
+
+
+
+
+
+
 
 \chapter{Experiments}
 \section{Validity of Experimental and evaluation procedure}
@@ -292,9 +540,11 @@ Thus, the heat transfer doesn't shows the same value with cooling and heating ev
 	\vspace{0zh}
 \end{figure}
 
+
+
 \begin{table}[h]
 \centering
-\caption{Summary of the experimental parameters for $Pr_{w}=10$ and performance of the skin friction coefficient\ $C_{f}$, Nusselt number\ $Nu$.}
+\caption{Summary of the experimental parameters for $Pr_{w}=10$ and performance of the skin friction coefficient\ $C_{f}$, Nusselt number\ $Nu$}
 \vspace{1zh}
 \label{pr10}
 \begin{tabular}{SrrSlSSSS} \toprule%\boldmath
@@ -348,10 +598,10 @@ Thus, the heat transfer doesn't shows the same value with cooling and heating ev
 \label{heatflux}
 \begin{tabular}{SrrSlSSSS} \toprule%\boldmath
 {{$Pr_{w}$}} & {$Re_{b}$} & {$C_{f}$} & {$Nu$} & {$T_{w}\ [^\circ C]$} & {$T_{b}\ [^\circ C]$}  & {$\Delta T\ [^\circ C]$}  & {$q_{el}\ [kW/m^{2}]$} & {$q_{hc}\ [kW/m^{2}]$} \\ \midrule
-10.0 & 3981  & 0.00999 & 41.3 & 71.4 & 67.8 & 3.6  & 6.8  & 5.3  \\
-10.1 & 4047  & 0.00988 & 42.2 & 70.8 & 66.9 & 3.9  & 7.4  & 5.8  \\
-9.9  & 4128  & 0.00983 & 42.9 & 71.6 & 67.2 & 4.4  & 8.2  & 6.6  \\
-9.9  & 4141  & 0.00952 & 47.3 & 71.8 & 57.9 & 14.0 & 26.7 & 23.1 \\ \midrule
+10.0 & 4176  & 0.00977 & 43.5 & 71.4 & 67.2 & 4.2  & 8.1  & 6.5  \\
+9.9  & 4029  & 0.01020 & 44.1 & 71.6 & 63.7 & 7.9  & 14.8 & 12.3 \\
+10.0 & 4098  & 0.00968 & 45.6 & 71.3 & 62.2 & 9.1  & 16.8 & 14.6 \\
+10.0 & 3948  & 0.00977 & 45.1 & 71.5 & 57.9 & 13.5 & 25.2 & 21.5 \\ \midrule
 10.0 & 6496  & 0.00897 & 68.3 & 71.5 & 67.8 & 3.7  & 11.1 & 8.9  \\
 10.0 & 6569  & 0.00869 & 71.0 & 71.3 & 65.6 & 5.7  & 16.8 & 14.1 \\
 9.9  & 6423  & 0.00879 & 71.2 & 71.5 & 62.8 & 8.8  & 25.7 & 22.0 \\
@@ -364,10 +614,10 @@ Thus, the heat transfer doesn't shows the same value with cooling and heating ev
 10.0 & 9320  & 0.00819 & 93.6  & 71.4 & 67.5 & 3.9  & 15.6 & 12.8 \\
 10.0 & 9518  & 0.00815 & 97.0  & 71.3 & 66.1 & 5.2  & 21.2 & 17.8 \\
 9.9  & 9380  & 0.00818 & 97.8  & 71.7 & 63.6 & 8.1  & 32.4 & 27.8 \\ \midrule
-10.0 & &&&&&&&\\
-10.0 & &&&&&&&\\
-10.0 & &&&&&&&\\
-10.0 & &&&&&&&\\ \midrule
+10.0 & 11628 & 0.00748 & 107.4 & 71.5 & 69.8 & 1.7  & 8.8  & 6.5  \\
+9.8  & 11445 & 0.00767 & 108.7 & 72.1 & 69.4 & 2.8  & 13.3 & 10.7 \\
+10.0 & 11213 & 0.00774 & 110.5 & 71.5 & 66.4 & 5.0  & 23.1 & 19.6 \\
+9.9  & 11373 & 0.00784 & 113.4 & 71.7 & 64.5 & 7.2  & 33.4 & 28.7 \\ \midrule
 10.0 & 12548 & 0.00738 & 114.3 & 71.4 & 69.7 & 1.7  & 8.9  & 6.7  \\
 10.0 & 12458 & 0.00746 & 116.8 & 71.4 & 68.6 & 2.8  & 14.6 & 11.7 \\
 9.9  & 12457 & 0.00761 & 118.8 & 71.6 & 67.1 & 4.5  & 22.6 & 19.0 \\

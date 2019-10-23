@@ -93,6 +93,16 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/breqn.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/breqn.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/flexisym.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/flexisym.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/cmbase.sym
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/cmbase.sym
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/mathstyle.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breqn/mathstyle.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/nomencl/nomencl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/nomencl/nomencl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -227,6 +237,12 @@ INPUT fig/mp_rho.pdf
 INPUT extractbb -B cropbox -O fig/mp_rho.pdf
 INPUT fig/mp_pr.pdf
 INPUT extractbb -B cropbox -O fig/mp_pr.pdf
+INPUT fig/heating_and_cooling.pdf
+INPUT extractbb -B cropbox -O fig/heating_and_cooling.pdf
+INPUT fig/loop.pdf
+INPUT extractbb -B cropbox -O fig/loop.pdf
+INPUT fig/testsection.pdf
+INPUT extractbb -B cropbox -O fig/testsection.pdf
 INPUT fig/pr10_recf.pdf
 INPUT extractbb -B cropbox -O fig/pr10_recf.pdf
 INPUT fig/pr10_renu.pdf

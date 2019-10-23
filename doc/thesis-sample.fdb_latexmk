@@ -1,9 +1,0 @@
-# Fdb version 3
-["dvipdf"] 0 "thesis-sample.dvi" "thesis-sample.pdf" "thesis-sample" 0
-  "thesis-sample.dvi" 0 -1 0 "latex"
-  (generated)
-  "thesis-sample.pdf"
-["latex"] 1570609172 "thesis-sample.tex" "thesis-sample.dvi" "thesis-sample" 1570609172
-  (generated)
-  "thesis-sample.log"
-  "thesis-sample.dvi"

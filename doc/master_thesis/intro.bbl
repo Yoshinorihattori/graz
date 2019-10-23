@@ -23,6 +23,10 @@ Volker Gnielinski, \emph{{Neue Gleichungen f{\"{u}}r den W{\"{a}}rme- und den
   Kan{\"{a}}len}}, Forschung im Ingenieurwesen \textbf{41} (1975), no.~1,
   8--16.
 
+\bibitem{jcgm2008}
+JCGM, \emph{{Evaluation of measurement data}}, International Organization for
+  Standardization Geneva ISBN \textbf{50} (2008), no.~September, 134.
+
 \bibitem{Petukhov1970}
 B.~S. Petukhov, \emph{{Heat Transfer and Friction in Turbulent Pipe Flow with
   Variable Physical Properties}}, Advances in Heat Transfer \textbf{6} (1970),
@@ -32,5 +36,11 @@ B.~S. Petukhov, \emph{{Heat Transfer and Friction in Turbulent Pipe Flow with
 {V. Gnielinski}, \emph{{New equation for heat and mass transfer in turbulent
   pipe and channel flow}}, International Chemical Engineering \textbf{16}
   (1976), no.~2, 359--368.
+
+\bibitem{Zanoun2009}
+E.~S. Zanoun, M.~Kito, and C.~Egbers, \emph{{A study on flow transition and
+  development in circular and rectangular ducts}}, Journal of Fluids
+  Engineering, Transactions of the ASME \textbf{131} (2009), no.~6,
+  0612041--06120410.
 
 \end{thebibliography}
