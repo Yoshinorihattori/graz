@@ -251,8 +251,10 @@ INPUT fig/pr10heatflux_recfdt.pdf
 INPUT extractbb -B cropbox -O fig/pr10heatflux_recfdt.pdf
 INPUT fig/pr10heatflux_renudt.pdf
 INPUT extractbb -B cropbox -O fig/pr10heatflux_renudt.pdf
-INPUT appendix.tex
-INPUT appendix.tex
+INPUT fig/SD_shield4prresure.pdf
+INPUT extractbb -B cropbox -O fig/SD_shield4prresure.pdf
+INPUT fig/SD_shield4cf.pdf
+INPUT extractbb -B cropbox -O fig/SD_shield4cf.pdf
 INPUT intro.bbl
 INPUT intro.bbl
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm

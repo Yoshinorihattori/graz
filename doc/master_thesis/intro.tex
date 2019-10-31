@@ -452,10 +452,10 @@ For this case study, Table (\ref{case_study}) shows one of the measurement data 
 \caption{}
 \vspace{1zh}
 \label{case_study}
-\begin{tabular}{lllllllllll} \toprule%\boldmath
-{Case} & {$Pr_{w}$} & {$Re$}  & {$C_{f}$} & {$Nu$} & {$\dot{m}$} & {$\Delta p$} & {$T_{w}$} & {$\rho_{out}$} & {$\lambda_{out}$} & $c_{p,out}$\\ \midrule
-Case A & 10.0 & 4100 & 0.0103 & 38.7 & 0.044 & 253.8 & 71.2 & 1041 & 0.420 & 3.55\\
-Case B &&&&&&&&&&\\
+\begin{tabular}{lllllllllllll} \toprule%\boldmath
+{Case} & {$Pr_{w}$} & {$Re$}  & {$C_{f}$} & {$Nu$} & {$\dot{m}$} & {$\Delta p$} & {$T_{w}$} & {$T_{in}$} & {$T_{out}$} & {$\rho_{out}$} & {$\lambda_{out}$} & $c_{p,out}$\\ \midrule
+Case A & 10.0 & 3747 & 0.0103 & 38.7 & 0.044 & 253.8 & 71.2 & 65.2 & 67.6 & 1041 & 0.420 & 3.55\\
+Case B &&&&&&&&&&&&\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -490,18 +490,30 @@ By substituting absolute error shown in table (\ref{absolute_error}) into the eq
         + \left(\frac{0.0040}{T_{out} - T_{w}}\right)^{2}
         + \left(\frac{0.0040\cdot \left( T_{in} - T_{w}\right)}{\left( T_{in} - T_{out}\right)\left( T_{out}-T_{w} \right)} \right)^{2}
     \end{aligned}
-    }\\
-    & = Nu\cdot
+          }\\
+    & = 38.7\cdot
     \sqrt{
     \begin{aligned}
-        & \left(\frac{\Delta \dot{m}}{\dot{m}}\right)^{2}
-        + \left(\frac{\Delta c_{p,out}}{c_{p,out}}\right)^{2}
-        + \left(\frac{\Delta \lambda_{out}}{\lambda_{out}}\right)^{2}+\\
-        & \left(\frac{\Delta T}{T_{in} - T_{out}}\right)^{2}
-        + \left(\frac{\Delta T}{T_{out} - T_{w}}\right)^{2}
-        + \left(\frac{\Delta T\left( T_{in} - T_{w}\right)}{\left( T_{in} - T_{out}\right)\left( T_{out}-T_{w} \right)} \right)^{2}
-        \end{aligned}
-        }
+        & \left(\frac{0.20E-3\cdot 0.044}{0.044}\right)^{2}
+        + \left(\frac{0.18}{3.55E+3}\right)^{2}
+        + \left(\frac{2.4E-5}{0.420}\right)^{2}+\\
+        & \left(\frac{0.0040}{65.2 - 67.6}\right)^{2}
+        + \left(\frac{0.0040}{67.6 - 71.2}\right)^{2}
+        + \left(\frac{0.0040\cdot \left(65.2 - 71.2\right)}{\left(65.2 - 67.6\right)\left(67.6 - 71.2\right)}\right)^{2}
+    \end{aligned}
+         }\\
+    & = 38.7\cdot
+    \sqrt{
+    \begin{aligned}
+        \left(0.20E-3\right)^{2} +
+        & \left(0.51E-4\right)^{2}
+        + \left(0.57E-4\right)^{2} +\\
+        & \left(0.16E-2\right)^{2}
+        + \left(0.10E-2\right)^{2}
+        + \left(0.27E-2\right)^{2}
+    \end{aligned}
+         }\\
+    & = 0721
 \end{align}
 
 
@@ -540,7 +552,7 @@ By substituting absolute error shown in table (\ref{absolute_error}) into the eq
 	\vspace{0zh}
 \end{figure}
 
-
+%Data
 
 \begin{table}[h]
 \centering
@@ -642,17 +654,70 @@ LES & 10.0 & 750 & 11465 & 0.00704 & 106.1 & 71.2 & 66.2 & 5.4  & 20.0 \\ \botto
 \end{tabular}
 \end{table}
 
-\subsection{Scattering and proberbility density function}
+\clearpage
+\subsection{Trendency of scattering}
+%In this study, the author found that for lower Reynodls number,
+%As lower Reynolds number, higher scattering for skinf friction coefficient.
+Figure shows prresure and velocity oscilatin dependence of time axis.
+Each red crossing points shows measurement samples of each time and the samples were taken every one second.
+---------------\\
+As shown in figures, both pressure and velocity has fraqutuation dependent of time.
+In order to investigate the relationship between skin friction coefficient, prresure and velocit, cross correlation function were calcurated.
+Table show cross correlation for each factors.
+\begin{table}
+
+\end{table}
+
+--------------\\
+Table shows standard deviation of each parameters for $Re_{b}=??$ and $Re_{b}=??$.
+As shown in the table, the scattering of those parametes are independ to the Reynolds number.
+However, the scattering for skin friction coefficient decrease for higher Reynolds number.
+As shown in Chapter??, skin friction coefficient is deriverded following eqaution. (\ref{cf})
+\begin{equation}
+    C_{f} = \frac{\Delta p}{\Delta z} \frac{d_{i}^{5}\pi^{2}\rho_{b}}{32\dot{m}^{2}}
+    \label{cf}
+\end{equation}
+The skin fricition coefficiet is proposal to prresure differene $\Delta p$ and ?? to mass flow rate $\dot{m}$ which is directly connected to valocity$U$.
+For higher Reynolds number which means higer velosity, skin friction coefficient decrease ??? to the power of mass flow rate.
+Therefore, the effect of pressure scatering seems to dcrease because of high velocity term.\\
+\subsection{Electric field from a welder}
+Skin friction coefficient without heating from the welder could not observe any scattering.
+The welder achieve high current, and we assumed the scatering come from electric field from the welder.
+Then, a cable of pressure sensor was surrounded to protect from the eleceric field.\\
+Figure shows standard deviation with and without electrical shield.
+It is ovbsiou that the electical shield achieve to decrease the pressure noise from the welder.
+\begin{figure}[t]
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=1\linewidth]{fig/SD_shield4prresure.pdf}
+        \end{center}
+        \caption{一つめの図}
+        \label{fig:one}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=1\linewidth]{fig/SD_shield4cf.pdf}
+        \end{center}
+        \caption{二つめの図}
+        \label{fig:two}
+    \end{minipage}
+\end{figure}
+As you can see from the figures, ???$\%$ of the scattering is reduced.
+
+
+\subsection{Probability density function}
+
+
 \subsection{Comparison with Bertsche}
 \subsection{Comparison with DNS and LES}
 \subsection{Effect of the presure popower}
 \subsection{Effect of material properties}
-\subsection{}
+
 \chapter{Conclusion}
 
 
 \appendix
-\input{appendix}
+%\input{appendix}
 
 %http://lightology.hatenablog.com/entry/2018/02/12/221721
 \bibliographystyle{amsplain}
