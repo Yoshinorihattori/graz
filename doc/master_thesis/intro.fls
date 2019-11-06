@@ -243,6 +243,13 @@ INPUT fig/loop.pdf
 INPUT extractbb -B cropbox -O fig/loop.pdf
 INPUT fig/testsection.pdf
 INPUT extractbb -B cropbox -O fig/testsection.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmss17.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmtt12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT fig/pr10_recf.pdf
 INPUT extractbb -B cropbox -O fig/pr10_recf.pdf
 INPUT fig/pr10_renu.pdf
@@ -251,6 +258,22 @@ INPUT fig/pr10heatflux_recfdt.pdf
 INPUT extractbb -B cropbox -O fig/pr10heatflux_recfdt.pdf
 INPUT fig/pr10heatflux_renudt.pdf
 INPUT extractbb -B cropbox -O fig/pr10heatflux_renudt.pdf
+INPUT fig/pr7_recf.pdf
+INPUT extractbb -B cropbox -O fig/pr7_recf.pdf
+INPUT fig/pr13_recf.pdf
+INPUT extractbb -B cropbox -O fig/pr13_recf.pdf
+INPUT fig/pr7_renu.pdf
+INPUT extractbb -B cropbox -O fig/pr7_renu.pdf
+INPUT fig/pr13_renu.pdf
+INPUT extractbb -B cropbox -O fig/pr13_renu.pdf
+INPUT fig/pr7heatflux_recfdt.pdf
+INPUT extractbb -B cropbox -O fig/pr7heatflux_recfdt.pdf
+INPUT fig/pr13heatflux_recfdt.pdf
+INPUT extractbb -B cropbox -O fig/pr13heatflux_recfdt.pdf
+INPUT fig/pr7heatflux_renudt.pdf
+INPUT extractbb -B cropbox -O fig/pr7heatflux_renudt.pdf
+INPUT fig/pr13heatflux_renudt.pdf
+INPUT extractbb -B cropbox -O fig/pr13heatflux_renudt.pdf
 INPUT fig/SD_shield4prresure.pdf
 INPUT extractbb -B cropbox -O fig/SD_shield4prresure.pdf
 INPUT fig/SD_shield4cf.pdf

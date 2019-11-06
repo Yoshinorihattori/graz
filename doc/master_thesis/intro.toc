@@ -19,22 +19,27 @@
 \contentsline {section}{\numberline {3.5}Uncertainty Analysis of Measurement}{19}% 
 \contentsline {subsection}{\numberline {3.5.1}Case study}{21}% 
 \contentsline {chapter}{\numberline {第4章}Experiments}{23}% 
-\contentsline {section}{\numberline {4.1}Validity of Experimental and evaluation procedure}{24}% 
-\contentsline {section}{\numberline {4.2}Experimental result and variation}{24}% 
-\contentsline {subsection}{\numberline {4.2.1}Validation of experimental result for $Pr_{w}=7$}{24}% 
-\contentsline {subsection}{\numberline {4.2.2}Validation of experimental result for $Pr_{w}=10$}{24}% 
-\contentsline {subsection}{\numberline {4.2.3}Validation of experimental result for $Pr_{w}=13$}{25}% 
-\contentsline {subsection}{\numberline {4.2.4}Validation of experimental result for $Pr_{w}=13$}{25}% 
-\contentsline {section}{\numberline {4.3}Discussion}{25}% 
-\contentsline {subsection}{\numberline {4.3.1}Reproducibility}{25}% 
-\contentsline {subsection}{\numberline {4.3.2}Secoundary flow}{25}% 
-\contentsline {subsection}{\numberline {4.3.3}Influence of heat flux}{25}% 
-\contentsline {subsection}{\numberline {4.3.4}Trendency of scattering}{30}% 
-\contentsline {subsection}{\numberline {4.3.5}Electric field from a welder}{30}% 
-\contentsline {subsection}{\numberline {4.3.6}Probability density function}{31}% 
-\contentsline {subsection}{\numberline {4.3.7}Comparison with Bertsche}{31}% 
-\contentsline {subsection}{\numberline {4.3.8}Comparison with DNS and LES}{31}% 
-\contentsline {subsection}{\numberline {4.3.9}Effect of the presure popower}{31}% 
-\contentsline {subsection}{\numberline {4.3.10}Effect of material properties}{31}% 
-\contentsline {chapter}{\numberline {第5章}Conclusion}{32}% 
-\contentsline {chapter}{References}{33}% 
+\contentsline {section}{\numberline {4.1}Parameter valiation during experiment}{24}% 
+\contentsline {section}{\numberline {4.2}Validation of experimental result for $Pr_{w}=10$}{25}% 
+\contentsline {subsection}{\numberline {4.2.1}Skin friction coefficient for $Pr_{w}=10$}{25}% 
+\contentsline {subsection}{\numberline {4.2.2}Heat transfer coefficient for $Pr_{w}=10$}{26}% 
+\contentsline {subsection}{\numberline {4.2.3}Skin friction coefficient vary with heat flux for $Pr_{w}=10$}{28}% 
+\contentsline {subsection}{\numberline {4.2.4}Heat transfer coefficient vary with heat flux for $Pr_{w}=10$}{29}% 
+\contentsline {section}{\numberline {4.3}Validation of experimental result for $Pr_{w}=7, 13$}{32}% 
+\contentsline {subsection}{\numberline {4.3.1}Skin friction coefficient for $Pr_{w}=7, 13$}{32}% 
+\contentsline {subsection}{\numberline {4.3.2}Heat transfer coefficient for $Pr_{w}=7, 13$}{34}% 
+\contentsline {subsection}{\numberline {4.3.3}Skin friction coefficient vary with heat flux for $Pr_{w}=7, 13$}{38}% 
+\contentsline {subsection}{\numberline {4.3.4}Heat transfer coefficient vary with heat flux for $Pr_{w}=7, 13$}{40}% 
+\contentsline {section}{\numberline {4.4}Discussion}{43}% 
+\contentsline {subsection}{\numberline {4.4.1}Reproducibility}{43}% 
+\contentsline {subsection}{\numberline {4.4.2}Secoundary flow}{43}% 
+\contentsline {subsection}{\numberline {4.4.3}Electric shield}{43}% 
+\contentsline {subsection}{\numberline {4.4.4}Trendency of scattering}{44}% 
+\contentsline {subsection}{\numberline {4.4.5}Electric field from a welder}{44}% 
+\contentsline {subsection}{\numberline {4.4.6}Probability density function}{45}% 
+\contentsline {subsection}{\numberline {4.4.7}Comparison with Bertsche}{45}% 
+\contentsline {subsection}{\numberline {4.4.8}Comparison with DNS and LES}{45}% 
+\contentsline {subsection}{\numberline {4.4.9}Effect of the presure popower}{45}% 
+\contentsline {subsection}{\numberline {4.4.10}Effect of material properties}{45}% 
+\contentsline {chapter}{\numberline {第5章}Conclusion}{46}% 
+\contentsline {chapter}{References}{47}% 

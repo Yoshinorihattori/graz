@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2019.7.8)  31 OCT 2019 16:47
+This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2019.7.8)  6 NOV 2019 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,15 +737,6 @@ LaTeX Warning: Label `pr' multiply defined.
 LaTeX Warning: Label `delta_cf' multiply defined.
 
 
-LaTeX Warning: Label `pr' multiply defined.
-
-
-LaTeX Warning: Label `pr' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
 LaTeX Warning: Label `cf' multiply defined.
 
 )
@@ -914,18 +905,28 @@ File: fig/testsection.pdf Graphic file (type pdf)
 第 4 章
 [23
 
+] [24
+
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 531.
 File: fig/pr10_recf.pdf Graphic file (type pdf)
 <fig/pr10_recf.pdf>
+ [25
+
+]
 File: fig/pr10_renu.pdf Graphic file (type pdf)
 <fig/pr10_renu.pdf>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[26
+
+] [27]
 File: fig/pr10heatflux_recfdt.pdf Graphic file (type pdf)
 <fig/pr10heatflux_recfdt.pdf>
-[24
+ [28
 
 ]
 File: fig/pr10heatflux_renudt.pdf Graphic file (type pdf)
@@ -937,21 +938,70 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26] [27] [28] [29]
+[29
+
+] [30] [31]
+File: fig/pr7_recf.pdf Graphic file (type pdf)
+<fig/pr7_recf.pdf>
+File: fig/pr13_recf.pdf Graphic file (type pdf)
+<fig/pr13_recf.pdf>
+ [32
+
+] [33]
+File: fig/pr7_renu.pdf Graphic file (type pdf)
+<fig/pr7_renu.pdf>
+File: fig/pr13_renu.pdf Graphic file (type pdf)
+<fig/pr13_renu.pdf>
+ [34
+
+] [35]
+Overfull \hbox (236.96289pt too wide) in paragraph at lines 796--797
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36
+
+] [37]
+File: fig/pr7heatflux_recfdt.pdf Graphic file (type pdf)
+<fig/pr7heatflux_recfdt.pdf>
+File: fig/pr13heatflux_recfdt.pdf Graphic file (type pdf)
+<fig/pr13heatflux_recfdt.pdf>
+ [38
+
+] [39]
+File: fig/pr7heatflux_renudt.pdf Graphic file (type pdf)
+<fig/pr7heatflux_renudt.pdf>
+File: fig/pr13heatflux_renudt.pdf Graphic file (type pdf)
+<fig/pr13heatflux_renudt.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[40
+
+] [41] [42] [43
+
+]
 File: fig/SD_shield4prresure.pdf Graphic file (type pdf)
 <fig/SD_shield4prresure.pdf>
 File: fig/SD_shield4cf.pdf Graphic file (type pdf)
 <fig/SD_shield4cf.pdf>
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 690--704
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 957--971
 [][]$[]$[] []$[]$[] 
  []
 
-[30
+[44
 
-] [31]
+] [45]
 第 5 章
-[32
+[46
 
 ] (./intro.bbl
 
@@ -962,7 +1012,7 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 13.
 
-) [33
+) [47
 
 
 ] (./intro.aux)
@@ -974,12 +1024,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16664 strings out of 493223
- 317698 string characters out of 6144416
- 416246 words of memory out of 5000000
- 20475 multiletter control sequences out of 15000+600000
- 614857 words of font info for 112 fonts, out of 8000000 for 9000
+ 16714 strings out of 493223
+ 318699 string characters out of 6144416
+ 409419 words of memory out of 5000000
+ 20515 multiletter control sequences out of 15000+600000
+ 621935 words of font info for 119 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  36i,19n,45p,797b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on intro.dvi (34 pages, 63764 bytes).
+Output written on intro.dvi (48 pages, 87620 bytes).
